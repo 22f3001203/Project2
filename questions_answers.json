@@ -1,0 +1,498 @@
+[
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Install and run Visual Studio Code. In your Terminal (or Command Prompt), typecode -sand press\n        Enter. Copy and paste theentire outputbelow.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Runninguv run --with httpie -- https [URL]installs the Python packagehttpieand\n        sends a HTTPS request to the URL.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Let's make sure you know how to usenpxandprettier.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Let's make sure you can write formulas in Google Sheets. Type this formula into Google Sheets. (It won't work in\n        Excel)",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Let's make sure you can write formulas in Excel. Type this formula into Excel.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Just above this paragraph, there's a hidden input with a secret value.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "The dates are in the year-month-day format. Include both the start and end date in your count. You can do this\n        using any tool (e.g. Excel, Python, JavaScript, manually).",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Download and unzip fileq-extract-csv-zip.zipwhich has a singleextract.csvfile inside.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Let's make sure you know how to use JSON. Sort this JSON array of objects by the value of theagefield. In case of a tie, sort by thenamefield. Paste the resulting JSON below\n        without any spaces or newlines.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Let's make sure you know how to select elements using CSS selectors. Find all<div>s having afooclass in the hidden element below. What's the sum of theirdata-valueattributes?",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Download and process the files inq-unicode-data.zipwhich contains three files with different encodings:",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Let's make sure you know how to use GitHub.Create a GitHub accountif you don't have one. Create a new public\n        repository. Commit a single JSON file calledemail.jsonwith the value{\"email\": \"22f3001203@ds.study.iitm.ac.in\"}and push it.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Downloadq-replace-across-files.zipand unzip it into a new folder, then replace all \"IITM\" (in upper, lower, or mixed case) with \"IIT Madras\" inall files. Leave everything as-is - don't change theline endings.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Downloadq-list-files-attributes.zipand extract it. Uselswith options to list all files in the folder along with their date and file\n        size.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Downloadq-move-rename-files.zipand extract it. Usemvto move all files under folders into an empty folder. Then rename all files\n        replacing each digit with the next. 1 becomes 2, 9 becomes 0,a1b9c.txtbecomesa2b0c.txt.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Downloadq-compare-files.zipand extract it. It has 2 nearly identical files,a.txtandb.txt, with the same number\n        of lines.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Get all rows where the Type is \"Gold\". Ignore spaces and treat mis-spellings like GOLD, gold, etc. as \"Gold\".\n        Calculate the sales as Units * Price, and sum them up.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Write documentation in Markdown for an **imaginary** analysis of the number of steps you walked each day for a\n        week, comparing over time and with friends. The Markdown must include:",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Download the image below and compress itlosslesslyto an image that is less than 1,500 bytes.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Publish a page usingGitHub Pagesthat showcases your work. Ensure that\n        your email address22f3001203@ds.study.iitm.ac.inis in the page's HTML.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Let's make sure you can access Google Colab. Run this program on Google Colab, allowing all required access to\n        your email ID:22f3001203@ds.study.iitm.ac.in.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Download this image. Create a newGoogle Colab notebookand run this code (after fixing a mistake\n        in it) to calculate the number of pixels with a certain minimum brightness:",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Download thisq-vercel-python.jsonwhich has the marks of100 imaginary students.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Create aGitHub actionon one of your GitHub repositories.\n        Make sure one of the steps in the action has a name that contains your email address22f3001203@ds.study.iitm.ac.in.\n        For example:",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Create and push an image toDocker Hub. Add a tag named22f3001203to the image.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Downloadq-fastapi.csv. This file has 2-columns:",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "DownloadLlamafile. Run theLlama-3.2-1B-Instruct.Q6_K.llamafilemodel with it.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Download the Sales Excel file:q-clean-up-excel-sales-data.xlsx",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "EduTrack Systemsis a leading provider of educational management software that helps schools\n        and universities maintain accurate and up-to-date student records. EduTrack's platform is used by\n        administrators to monitor academic performance, manage enrollment, and generate reports for compliance and\n        strategic planning.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "s-anand.netis a personal website that had region-specific music content. One of the site's\n        key sections istamil, which hosts music files and is especially popular among the local\n        audience. The website is powered by robust Apache web servers that record detailed access logs. These logs are\n        essential for understanding user behavior, server load, and content engagement.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "s-anand.netis a personal website that had region-specific music content. One of the site's\n        key sections istelugu, which hosts music files and is especially popular among the local\n        audience. The website is powered by robust Apache web servers that record detailed access logs. These logs are\n        essential for understanding user behavior, server load, and content engagement.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "GlobalRetail Insightsis a market research and analytics firm specializing in providing\n        data-driven insights for multinational retail companies. Their clients rely on accurate, detailed sales reports\n        to make strategic decisions regarding product placement, inventory management, and marketing campaigns. However,\n        the quality of these insights depends on the reliability of the underlying sales data.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "ReceiptRevive Analyticsis a data recovery and business intelligence firm specializing in\n        processing legacy sales data from paper receipts. Many of the client companies have archives of receipts from\n        past years, which have been digitized using OCR (Optical Character Recognition) techniques. However, due to the\n        condition of some receipts (e.g., torn, faded, or partially damaged), the OCR process sometimes produces\n        incomplete JSON data. These imperfections can lead to truncated fields or missing values, which complicates the\n        process of data aggregation and analysis.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "DataSure Technologiesis a leading provider of IT infrastructure and software solutions, known\n        for its robust systems and proactive maintenance practices. As part of their service offerings, DataSure\n        collects extensive logs from thousands of servers and applications worldwide. These logs, stored in JSON format,\n        are rich with information about system performance, error events, and user interactions. However, the logs are\n        complex and deeply nested, which can make it challenging to quickly identify recurring issues or anomalous\n        behavior.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "EngageMetricsis a digital marketing analytics firm that specializes in tracking and analyzing\n        social media engagement. Their clients, ranging from major brands to local businesses, rely on data-driven\n        insights to optimize content strategy, measure campaign performance, and identify posts that drive significant\n        user interaction.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Mystery Tales Publishingis an independent publisher specializing in mystery and suspense\n        audiobooks. To broaden their audience and improve accessibility, they have been uploading narrated versions of\n        their stories to YouTube. In addition to reaching visually impaired users, they want to leverage transcripts for\n        content summarization, search indexing, and social media promotion.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "PixelGuard Solutionsis a digital forensics firm specializing in the recovery and analysis of\n        visual evidence for law enforcement and corporate investigations. One of their recurring challenges involves\n        reconstructing damaged or deliberately scrambled images to reveal hidden details critical to solving cases.",
+        "answer": "Correct!"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    },
+    {
+        "question": "Question not found",
+        "answer": "Answer not found"
+    }
+]
