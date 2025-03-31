@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://exam.sanand.workers.dev/tds-2025-01-ga2 -->
+<html lang="en" data-bs-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TDS 2025 Jan GA2 - Deployment Tools</title>
+  <link rel="icon" type="image/svg+xml" href="https://exam.sanand.workers.dev/favicon.svg">
+  <link rel="stylesheet" href="./TDS 2025 Jan GA2 - Deployment Tools_files/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./TDS 2025 Jan GA2 - Deployment Tools_files/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+  <link rel="stylesheet" href="./TDS 2025 Jan GA2 - Deployment Tools_files/default.min.css" integrity="sha384-4Y0nObtF3CbKnh+lpzmAVdAMtQXl+ganWiiv73RcGVdRdfVIya8Cao1C8ZsVRRDz" crossorigin="anonymous">
+  <link rel="stylesheet" href="./TDS 2025 Jan GA2 - Deployment Tools_files/github-dark.min.css">
+  <script src="./TDS 2025 Jan GA2 - Deployment Tools_files/bundle.tracing.replay.min.js.download" crossorigin="anonymous"></script><script src="./TDS 2025 Jan GA2 - Deployment Tools_files/f9b738b8a1bfb42581e666ab0a7dbb22.min.js.download" crossorigin="anonymous"></script>
+  <style>
+    body {
+      padding-top: 64px;
+    }
+
+    body[data-status="admin"] #navbar {
+      background-color: var(--bs-primary) !important;
+
+      .navbar-brand::before {
+        content: "[Admin] ";
+      }
+    }
+
+    body[data-status="running"] #navbar {
+      background-color: var(--bs-success) !important;
+    }
+
+    body[data-status="ended"] #navbar {
+      background-color: var(--bs-danger) !important;
+    }
+
+    [id] {
+      scroll-margin-top: 4rem;
+    }
+
+    textarea::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    textarea::-webkit-scrollbar-track {
+      background: #333;
+    }
+
+    textarea::-webkit-scrollbar-thumb {
+      background: #666;
+      cursor: default;
+    }
+
+    textarea::-webkit-scrollbar-thumb:hover {
+      background: #888;
+    }
+
+    /* Add a YouTube icon on top of all YouTube links with images */
+    a[href*="youtu"]:has(img[src*="ytimg"]) {
+      position: relative;
+      display: inline-block;
+    }
+    a[href*="youtu"]:has(img[src*="ytimg"])::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100px;
+      height: 100px;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-youtube" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2z"/><path d="M6.4 5.209v4.818l4.157-2.408z" fill="white"/></svg>') no-repeat center center;
+      background-size: contain;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+</style>
+<style id="googleidentityservice_button_styles">.qJTHM{-webkit-user-select:none;color:#202124;direction:ltr;-webkit-touch-callout:none;font-family:"Roboto-Regular",arial,sans-serif;-webkit-font-smoothing:antialiased;font-weight:400;margin:0;overflow:hidden;-webkit-text-size-adjust:100%}.ynRLnc{left:-9999px;position:absolute;top:-9999px}.L6cTce{display:none}.bltWBb{word-break:break-all}.hSRGPd{color:#1a73e8;cursor:pointer;font-weight:500;text-decoration:none}.Bz112c-W3lGp{height:16px;width:16px}.Bz112c-E3DyYd{height:20px;width:20px}.Bz112c-r9oPif{height:24px;width:24px}.Bz112c-uaxL4e{-webkit-border-radius:10px;border-radius:10px}.LgbsSe-Bz112c{display:block}.S9gUrf-YoZ4jf,.S9gUrf-YoZ4jf *{border:none;margin:0;padding:0}.fFW7wc-ibnC6b>.aZ2wEe>div{border-color:#4285f4}.P1ekSe-ZMv3u>div:nth-child(1){background-color:#1a73e8!important}.P1ekSe-ZMv3u>div:nth-child(2),.P1ekSe-ZMv3u>div:nth-child(3){background-image:linear-gradient(to right,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(to right,#1a73e8,#1a73e8)!important}.haAclf{display:inline-block}.nsm7Bb-HzV7m-LgbsSe{-webkit-border-radius:4px;border-radius:4px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background-color .218s,border-color .218s;transition:background-color .218s,border-color .218s;-webkit-user-select:none;-webkit-appearance:none;background-color:#fff;background-image:none;border:1px solid #dadce0;color:#3c4043;cursor:pointer;font-family:"Google Sans",arial,sans-serif;font-size:14px;height:40px;letter-spacing:0.25px;outline:none;overflow:hidden;padding:0 12px;position:relative;text-align:center;vertical-align:middle;white-space:nowrap;width:auto}@media screen and (-ms-high-contrast:active){.nsm7Bb-HzV7m-LgbsSe{border:2px solid windowText;color:windowText}}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe{font-size:14px;height:32px;letter-spacing:0.25px;padding:0 10px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe{font-size:11px;height:20px;letter-spacing:0.3px;padding:0 8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe{padding:0;width:40px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe{width:32px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe{width:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK{-webkit-border-radius:20px;border-radius:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe{-webkit-border-radius:16px;border-radius:16px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe{-webkit-border-radius:10px;border-radius:10px}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc{border:none;color:#fff}.nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc{background-color:#1a73e8}.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{background-color:#202124;color:#e8eaed}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:18px;margin-right:8px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:14px;min-width:14px;width:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:10px;min-width:10px;width:10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin-left:8px;margin-right:-4px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:10px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:4px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:3px;border-top-left-radius:3px;-webkit-border-bottom-left-radius:3px;border-bottom-left-radius:3px;display:-webkit-box;display:-webkit-flex;display:flex;justify-content:center;-webkit-align-items:center;align-items:center;background-color:#fff;height:36px;margin-left:-10px;margin-right:12px;min-width:36px;width:36px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:28px;margin-left:-8px;margin-right:10px;min-width:28px;width:28px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:16px;margin-left:-6px;margin-right:8px;min-width:16px;width:16px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:3px;border-radius:3px;margin-left:2px;margin-right:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:14px;border-radius:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:8px;border-radius:8px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-flex-direction:row;flex-direction:row;justify-content:space-between;-webkit-flex-wrap:nowrap;flex-wrap:nowrap;height:100%;position:relative;width:100%}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX{justify-content:center}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:1;flex-grow:1;font-family:"Google Sans",arial,sans-serif;font-weight:500;overflow:hidden;text-overflow:ellipsis;vertical-align:top}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-weight:300}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:0;flex-grow:0}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{-webkit-transition:background-color .218s;transition:background-color .218s;bottom:0;left:0;position:absolute;right:0;top:0}.nsm7Bb-HzV7m-LgbsSe:hover,.nsm7Bb-HzV7m-LgbsSe:focus{-webkit-box-shadow:none;box-shadow:none;border-color:rgb(210,227,252);outline:none}.nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.04)}.nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.1)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.24)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.32)}.nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY{-webkit-border-radius:50%;border-radius:50%;display:-webkit-box;display:-webkit-flex;display:flex;height:20px;margin-left:-4px;margin-right:8px;min-width:20px;width:20px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-family:"Roboto";font-size:12px;text-align:left}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf,.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS{overflow:hidden;text-overflow:ellipsis}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;color:#5f6368;fill:#5f6368;font-size:11px;font-weight:400}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#e8eaed;fill:#e8eaed}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c{height:18px;margin:-3px -3px -3px 2px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:0;border-top-left-radius:0;-webkit-border-bottom-left-radius:0;border-bottom-left-radius:0;-webkit-border-top-right-radius:3px;border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;border-bottom-right-radius:3px;margin-left:12px;margin-right:-10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.L5Fo6c-sM5MNb{border:0;display:block;left:0;position:relative;top:0}.L5Fo6c-bF1uUb{-webkit-border-radius:4px;border-radius:4px;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0}.L5Fo6c-bF1uUb:focus{border:none;outline:none}sentinel{}</style></head>
+
+<body data-status="ended">
+
+  <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" data-bs-theme="dark" id="navbar">
+    <div class="container-fluid">
+      <span class="navbar-brand" href=".">
+        <span id="countdown">Ended at Sun, 2 Feb, 2025, 11:59 pm IST</span>
+        <button id="score" type="button" class="btn btn-dark btn-sm mb-1 ms-2" disabled="">Score: 0</button>
+        <button type="button" class="btn btn-outline-light btn-sm mb-1 ms-2 check-action" title="Check your score" disabled="">Check all</button>
+        <button type="button" class="btn btn-outline-light btn-sm mb-1 ms-2 save-action" title="Save your progress" disabled="">Save</button>
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="nav-item dropdown ms-auto" role="group" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+          <button class="dark-theme-toggle btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme (auto)">
+            <i class="bi bi-circle-half"></i> <span class="d-lg-none ms-2">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><button class="dropdown-item" data-bs-theme-value="light" aria-pressed="false"><i class="me-2 bi bi-sun-fill"></i> Light</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false"><i class="me-2 bi bi-moon-stars-fill"></i> Dark</button></li>
+            <li><button class="dropdown-item active" data-bs-theme-value="auto" aria-pressed="true"><i class="me-2 bi bi-circle-half"></i> Auto</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="instructions">
+    <h1 class="display-3 my-5">
+      TDS 2025 Jan GA2 - Deployment Tools
+    </h1>
+
+    <h2 class="display-6 my-5">Instructions</h2>
+    <ol>
+      <li><strong>Learn what you need</strong>. Reading material is provided, but feel free to skip it if you can answer the question. (Or learn it, just for pleasure.)</li>
+      <li><strong>Check answers regularly</strong> by pressing <kbd>Check</kbd>. It shows which answers are right or wrong. You can check multiple times.</li>
+      <li><strong>Save regularly</strong> by pressing <kbd>Save</kbd>. You can save multiple times. Your last saved submission will be evaluated.</li>
+      <li><strong>Reloading is OK</strong>. Your answers are saved in your browser (not server). Questions won't change except for randomized parameters.</li>
+      <li><strong>Browser may struggle</strong>. If you face loading issues, turn off security restrictions or try a different browser.</li>
+      <li><strong>Use anything</strong>. You can use any resources you want. The Internet, ChatGPT, friends, whatever. Use any libraries or frameworks you want.</li>
+      <li><strong>It's hackable</strong>. It's possible to get the answer to <em>some</em> questions by hacking the code for this quiz. That's allowed.</li>
+    </ol>
+    <div class="alert alert-info d-flex align-items-center p-4 border-start border-info border-2 mt-5">
+      <i class="bi bi-chat-square-text-fill fs-4 me-3"></i>
+      <div>
+        <strong>Have questions?</strong>
+        <a href="https://discourse.onlinedegree.iitm.ac.in/t/ga2-deployment-tools-discussion-thread-tds-jan-2025/161120" target="_blank" class="alert-link ms-2">
+          Join the discussion on Discourse
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <section id="login" class="my-5"><!---->
+        <div id="logged-in-email" class="mb-3">You are logged in as <strong><!--?lit$604981738$-->22f3001203@ds.study.iitm.ac.in</strong>.</div>
+        <div class="mb-3">
+          <button class="btn btn-sm btn-outline-danger">
+            Logout
+          </button>
+        </div>
+      </section>
+
+    <section id="notification" class="my-5"><div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Recent saves <small class="text-muted fs-6 fw-light">(most recent is your official score)</small></h4>
+        <div class="d-flex align-items-center mt-2">
+  <button class="btn btn-sm btn-outline-primary me-2 load-answers" data-bs-toggle="collapse" data-index="0">Reload</button>
+  from 1/25/2025, 9:06:58 PM. Score: 1
+</div><div class="d-flex align-items-center mt-2">
+  <button class="btn btn-sm btn-outline-primary me-2 load-answers" data-bs-toggle="collapse" data-index="1">Reload</button>
+  from 1/25/2025, 9:06:58 PM. Score: 1
+</div><div class="d-flex align-items-center mt-2">
+  <button class="btn btn-sm btn-outline-primary me-2 load-answers" data-bs-toggle="collapse" data-index="2">Reload</button>
+  from 1/25/2025, 9:05:29 PM. Score: 0
+</div>
+        </div></section>
+
+    <section class="alert alert-info my-5 d-flex align-items-center d-none" id="loading-questions">
+      <div class="spinner-border text-primary me-2" role="status"></div>
+      <span>Loading questions...</span>
+    </section>
+
+    <form id="exam-form" class="needs-validation" novalidate="">
+      <section id="questions" class="my-5"><!----><!----><h1 class="display-6">Questions</h1><!----><!----><ol class="mt-3">
+        <!--?lit$604981738$--><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga2#hq-markdown"><!--?lit$604981738$-->Write documentation in Markdown</a> (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga2#hq-image-compression"><!--?lit$604981738$-->Compress an image</a> (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga2#hq-github-pages"><!--?lit$604981738$-->Host your portfolio on GitHub Pages</a> (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga2#hq-use-colab"><!--?lit$604981738$-->Use Google Colab</a> (<!--?lit$604981738$-->0.5 <!--?lit$604981738$-->marks)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga2#hq-use-colab-image-library"><!--?lit$604981738$-->Use an Image Library in Google Colab</a> (<!--?lit$604981738$-->0.5 <!--?lit$604981738$-->marks)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga2#hq-vercel-python"><!--?lit$604981738$-->Deploy a Python API to Vercel</a> (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga2#hq-github-action"><!--?lit$604981738$-->Create a GitHub Action</a> (<!--?lit$604981738$-->1.5 <!--?lit$604981738$-->marks)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga2#hq-docker-hub-image"><!--?lit$604981738$-->Push an image to Docker Hub</a> (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga2#hq-fastapi"><!--?lit$604981738$-->Write a FastAPI server to serve data</a> (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga2#hq-llamafile"><!--?lit$604981738$-->Run a local LLM with Llamafile</a> (<!--?lit$604981738$-->1.5 <!--?lit$604981738$-->marks)</li><!---->
+      </ol><!----><!---->
+          <div class="card my-5" data-question="q-markdown" id="hq-markdown">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$604981738$-->1</span>
+              <!--?lit$604981738$-->Write documentation in Markdown (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)
+            </div>
+            <!--?lit$604981738$--><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>Documentation: Markdown</h2>
+<p>Markdown is a lightweight markup language for creating formatted text using a plain-text editor. It's the standard for documentation in software projects and data science notebooks.</p>
+<p>Watch this introduction to Markdown (19 min):</p>
+<p><a href="https://youtu.be/HUBNt18RFbo" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault.webp" alt="Markdown Crash Course (19 min)" class="img-fluid"></a></p>
+<p>Common Markdown syntax:</p>
+<pre><code data-highlighted="yes" class="hljs language-markdown"><span class="hljs-section"># Heading 1</span>
+<span class="hljs-section">## Heading 2</span>
+
+<span class="hljs-strong">**bold**</span> and <span class="hljs-emphasis">*italic*</span>
+
+<span class="hljs-bullet">-</span> Bullet point
+<span class="hljs-bullet">-</span> Another point
+<span class="hljs-bullet">  -</span> Nested point
+
+<span class="hljs-bullet">1.</span> Numbered list
+<span class="hljs-bullet">2.</span> Second item
+
+[<span class="hljs-string">Link text</span>](<span class="hljs-link">https://url.com</span>)
+![<span class="hljs-string">Image alt</span>](<span class="hljs-link">image.jpg</span>)
+
+| Column 1 | Column 2 |
+|----------|----------|
+| Cell 1   | Cell 2   |
+
+<span class="hljs-code">```python
+# Code block
+def hello():
+    print("Hello")
+```</span>
+
+<span class="hljs-quote">&gt; Blockquote</span>
+</code></pre>
+<p>Tools for working with Markdown:</p>
+<ul>
+<li><a href="https://pypi.org/project/markdown2/" target="_blank" rel="noopener noreferrer">markdown2</a>: Python library to convert Markdown to HTML</li>
+<li><a href="https://github.com/DavidAnson/markdownlint" target="_blank" rel="noopener noreferrer">markdownlint</a>: Linting</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" target="_blank" rel="noopener noreferrer">Markdown All in One</a>: VS Code extension</li>
+<li><a href="https://pandoc.org/" target="_blank" rel="noopener noreferrer">pandoc</a>: Convert between formats</li>
+</ul>
+</div><!---->
+            <div class="card-body"><!--?lit$604981738$-->
+    <div class="mb-3">
+      <p>
+        Write documentation in Markdown for an **imaginary** analysis of the number of steps you walked each day for a
+        week, comparing over time and with friends. The Markdown must include:
+      </p>
+      <ul>
+        <li><strong>Top-Level Heading</strong>: At least 1 heading at level 1, e.g., <code># Introduction</code></li>
+        <li><strong>Subheadings</strong>: At least 1 heading at level 2, e.g., <code>## Methodology</code></li>
+        <li><strong>Bold Text</strong>: At least 1 instance of bold text, e.g., <code>**important**</code></li>
+        <li><strong>Italic Text</strong>: At least 1 instance of italic text, e.g., <code>*note*</code></li>
+        <li><strong>Inline Code</strong>: At least 1 instance of inline code, e.g., <code>sample_code</code></li>
+        <li>
+          <strong>Code Block</strong>: At least 1 instance of a
+          <a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks">fenced code block</a>, e.g.
+          <pre><code class="language-python hljs" data-highlighted="yes">
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Hello World"</span>)
+</code></pre>
+        </li>
+        <li><strong>Bulleted List</strong>: At least 1 instance of a bulleted list, e.g., <code>- Item</code></li>
+        <li><strong>Numbered List</strong>: At least 1 instance of a numbered list, e.g., <code>1. Step One</code></li>
+        <li><strong>Table</strong>: At least 1 instance of a table, e.g., <code>| Column A | Column B |</code></li>
+        <li>
+          <strong>Hyperlink</strong>: At least 1 instance of a hyperlink, e.g., <code>[Text](https://example.com)</code>
+        </li>
+        <li>
+          <strong>Image</strong>: At least 1 instance of an image, e.g.,
+          <code>![Alt Text](https://example.com/image.jpg)</code>
+        </li>
+        <li>
+          <strong>Blockquote</strong>: At least 1 instance of a blockquote, e.g., <code>&gt; This is a quote</code>
+        </li>
+      </ul>
+      <label class="form-label" for="q-markdown">Enter your Markdown here:</label>
+      <textarea class="form-control" rows="10" id="q-markdown" name="q-markdown" disabled=""></textarea><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-markdown" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-image-compression" id="hq-image-compression">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$604981738$-->2</span>
+              <!--?lit$604981738$-->Compress an image (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)
+            </div>
+            <!--?lit$604981738$--><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>Images: Compression</h2>
+<p>Image compression is essential when deploying apps. Often, pages have dozens of images. Image analysis runs over thousands of images. The cost of storage and bandwidth can grow over time.</p>
+<p>Here are things you should know when you're compressing images:</p>
+<ul>
+<li><strong>Image dimensions</strong> are the width and height of the image in pixels. This impacts image size a lot</li>
+<li><strong>Lossless</strong> compression (PNG, WebP) preserves exact data</li>
+<li><strong>Lossy</strong> compression (JPEG, WebP) removes some data for smaller files</li>
+<li><strong>Vector</strong> formats (SVG) scale without quality loss</li>
+<li><strong>WebP</strong> is the modern standard, supporting both lossy and lossless</li>
+</ul>
+<p>Here's a rule of thumb you can use as of 2025.</p>
+<ul>
+<li>Use SVG if you can (i.e. if it's vector graphics or you can convert it to one)</li>
+<li>Else, reduce the image to as small as you can, and save as lossy WebP</li>
+</ul>
+<p>Common operations with Python:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">from</span> pathlib <span class="hljs-keyword">import</span> Path
+<span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image
+<span class="hljs-keyword">import</span> io
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">compress_image</span>(<span class="hljs-params">input_path: Path, output_path: Path, quality: <span class="hljs-built_in">int</span> = <span class="hljs-number">85</span></span>) -&gt; <span class="hljs-literal">None</span>:
+    <span class="hljs-string">"""Compress an image while maintaining reasonable quality."""</span>
+    <span class="hljs-keyword">with</span> Image.<span class="hljs-built_in">open</span>(input_path) <span class="hljs-keyword">as</span> img:
+        <span class="hljs-comment"># Convert RGBA to RGB if needed</span>
+        <span class="hljs-keyword">if</span> img.mode == <span class="hljs-string">'RGBA'</span>:
+            img = img.convert(<span class="hljs-string">'RGB'</span>)
+        <span class="hljs-comment"># Optimize for web</span>
+        img.save(output_path, <span class="hljs-string">'WEBP'</span>, quality=quality, optimize=<span class="hljs-literal">True</span>)
+
+<span class="hljs-comment"># Batch process images</span>
+paths = Path(<span class="hljs-string">'images'</span>).glob(<span class="hljs-string">'*.jpg'</span>)
+<span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> paths:
+    <span class="hljs-keyword">await</span> compress_image(p, p.with_suffix(<span class="hljs-string">'.webp'</span>))
+</code></pre>
+<p>Command line tools include <a href="https://developers.google.com/speed/webp/docs/cwebp" target="_blank" rel="noopener noreferrer">cwebp</a>, <a href="https://pngquant.org/" target="_blank" rel="noopener noreferrer">pngquant</a>, <a href="https://github.com/tjko/jpegoptim" target="_blank" rel="noopener noreferrer">jpegoptim</a>, and <a href="https://imagemagick.org/" target="_blank" rel="noopener noreferrer">ImageMagick</a>.</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Convert to WebP</span>
+cwebp -q 85 input.png -o output.webp
+
+<span class="hljs-comment"># Optimize PNG</span>
+pngquant --quality=65-80 image.png
+
+<span class="hljs-comment"># Optimize JPEG</span>
+jpegoptim --strip-all --all-progressive --max=85 image.jpg
+
+<span class="hljs-comment"># Convert and resize</span>
+convert input.jpg -resize 800x600 output.jpg
+
+<span class="hljs-comment"># Batch convert</span>
+mogrify -format webp -quality 85 *.jpg
+</code></pre>
+<p>Watch this video on modern image formats and optimization (15 min):</p>
+<p><a href="https://youtu.be/F1kYBnY6mwg" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(1).webp" alt="Modern Image Optimization (15 min)" class="img-fluid"></a></p>
+<p>Tools for image optimization:</p>
+<ul>
+<li><a href="https://squoosh.app/" target="_blank" rel="noopener noreferrer">squoosh.app</a>: Browser-based compression</li>
+<li><a href="https://imageoptim.com/" target="_blank" rel="noopener noreferrer">ImageOptim</a>: GUI tool for Mac</li>
+<li><a href="https://sharp.pixelplumbing.com/" target="_blank" rel="noopener noreferrer">sharp</a>: Node.js image processing</li>
+<li><a href="https://python-pillow.org/" target="_blank" rel="noopener noreferrer">Pillow</a>: Python imaging library</li>
+</ul>
+</div><!---->
+            <div class="card-body"><!--?lit$604981738$-->
+    <div class="mb-3">
+      <p>Download the image below and compress it <em>losslessly</em> to an image that is less than 1,500 bytes.</p>
+      <p><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/shapes.png"></p>
+      <p>By losslessly, we mean that every pixel in the new image should be identical to the original image.</p>
+      <label class="form-label" for="q-image-compression">Upload your losslessly compressed image (less than 1,500 bytes)</label>
+      <input class="form-control" type="file" accept="image/*" id="q-image-compression" name="q-image-compression" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-image-compression" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-github-pages" id="hq-github-pages">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$604981738$-->3</span>
+              <!--?lit$604981738$-->Host your portfolio on GitHub Pages (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)
+            </div>
+            <!--?lit$604981738$--><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>Static hosting: GitHub Pages</h2>
+<p><a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> is a free hosting service that turns your GitHub repository directly into a whenever you push it. This is useful for sharing analysis results, data science portfolios, project documentation, and more.</p>
+<p>Common Operations:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Create a new GitHub repo</span>
+<span class="hljs-built_in">mkdir</span> my-site
+<span class="hljs-built_in">cd</span> my-site
+git init
+
+<span class="hljs-comment"># Add your static content</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"&lt;h1&gt;My Site&lt;/h1&gt;"</span> &gt; index.html
+
+<span class="hljs-comment"># Push to GitHub</span>
+git add .
+git commit -m <span class="hljs-string">"feat(pages): initial commit"</span>
+git push origin main
+
+<span class="hljs-comment"># Enable GitHub Pages from the main branch on the repo settings page</span>
+</code></pre>
+<p>Best Practices:</p>
+<ol>
+<li><strong>Keep it small</strong><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/Multimedia" target="_blank" rel="noopener noreferrer">Optimize images</a>. Prefer SVG over WEBP over 8-bit PNG.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload" target="_blank" rel="noopener noreferrer">Preload</a> critical assets like stylesheets</li>
+<li>Avoid committing large files like datasets, videos, etc. directly. Explore <a href="https://git-lfs.github.com/" target="_blank" rel="noopener noreferrer">Git LFS</a> instead.</li>
+</ul>
+</li>
+</ol>
+<p>Tools:</p>
+<ul>
+<li><a href="https://desktop.github.com/" target="_blank" rel="noopener noreferrer">GitHub Desktop</a>: GUI for Git operations</li>
+<li><a href="https://cli.github.com/" target="_blank" rel="noopener noreferrer">GitHub CLI</a>: Command line interface</li>
+<li><a href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer">GitHub Actions</a>: Automation</li>
+</ul>
+<p><a href="https://youtube.com/shorts/WqOXxoGSpbs" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(2).webp" alt="Host a website using GitHub Pages" class="img-fluid"></a></p>
+<p><a href="https://youtu.be/sT_zXIX3ZA0" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(3).webp" alt="Deploy your first GitHub Pages Website" class="img-fluid"></a></p>
+</div><!---->
+            <div class="card-body"><!--?lit$604981738$-->
+    <div class="mb-3">
+      <p>
+        Publish a page using <a href="https://pages.github.com/">GitHub Pages</a> that showcases your work. Ensure that
+        your email address <strong><code><!--?lit$604981738$-->22f3001203@ds.study.iitm.ac.in</code></strong> is in the page's HTML.
+      </p>
+      <p>
+        GitHub pages are served via CloudFlare which
+        <a href="https://developers.cloudflare.com/waf/tools/scrape-shield/email-address-obfuscation/">obfuscates emails</a>.
+        So, wrap your email address inside a:
+        </p><pre><code class="language-html hljs language-xml" data-highlighted="yes"><span class="hljs-comment">&lt;!--email_off--&gt;</span>22f3001203@ds.study.iitm.ac.in<span class="hljs-comment">&lt;!--/email_off--&gt;</span></code></pre>
+      <p></p>
+      <label class="form-label" for="q-github-pages">
+        What is the GitHub Pages URL? It might look like:
+        <code>https://[USER].github.io/[REPO]/</code>
+      </label>
+      <input class="form-control" id="q-github-pages" name="q-github-pages" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+      <p class="text-muted">
+        If a recent change that's not reflected, add <code>?v=1</code>, <code>?v=2</code> to the URL to bust the cache.
+      </p>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-github-pages" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-use-colab" id="hq-use-colab">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$604981738$-->4</span>
+              <!--?lit$604981738$-->Use Google Colab (<!--?lit$604981738$-->0.5 <!--?lit$604981738$-->marks)
+            </div>
+            <!--?lit$604981738$--><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>Notebooks: Google Colab</h2>
+<p><a href="https://colab.research.google.com/" target="_blank" rel="noopener noreferrer">Google Colab</a> is a free, cloud-based Jupyter notebook environment that's become indispensable for data scientists and ML practitioners. It's particularly valuable because it provides free access to GPUs and TPUs, and for easy sharing of code and execution results.</p>
+<p>While Colab is excellent for prototyping and learning, its free tier has limitations - notebooks time out after 12 hours, and GPU access can be inconsistent.</p>
+<p>Learn how to mount Google Drive for persistent storage, manage dependencies with <code>!pip install</code> commands, as these are common pain points when getting started.</p>
+<p><a href="https://youtu.be/inN8seMm7UI" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(4).webp" alt="Get started with Google Colaboratory (3 min)" class="img-fluid"></a></p>
+<ul>
+<li><a href="https://youtu.be/rNgswRZ2C1Y" target="_blank" rel="noopener noreferrer">Google Colab features you may have missed</a></li>
+<li><a href="https://youtu.be/8HvugBq5NKg" target="_blank" rel="noopener noreferrer">How to mount Google Drive to Google Colab</a></li>
+<li><a href="https://youtu.be/tCYSce6l8gA" target="_blank" rel="noopener noreferrer">How to take advantage of GPUs and TPUs for your ML project</a></li>
+</ul>
+</div><!---->
+            <div class="card-body"><!--?lit$604981738$-->
+    <div class="mb-3">
+      <p>
+        Let's make sure you can access Google Colab. Run this program on Google Colab, allowing all required access to
+        your email ID: <code><!--?lit$604981738$-->22f3001203@ds.study.iitm.ac.in</code>.
+      </p>
+
+      <pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">import</span> hashlib
+<span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">from</span> google.colab <span class="hljs-keyword">import</span> auth
+<span class="hljs-keyword">from</span> oauth2client.client <span class="hljs-keyword">import</span> GoogleCredentials
+
+auth.authenticate_user()
+creds = GoogleCredentials.get_application_default()
+token = creds.get_access_token().access_token
+response = requests.get(
+  <span class="hljs-string">"https://www.googleapis.com/oauth2/v1/userinfo"</span>,
+  params={<span class="hljs-string">"alt"</span>: <span class="hljs-string">"json"</span>},
+  headers={<span class="hljs-string">"Authorization"</span>: <span class="hljs-string">f"Bearer <span class="hljs-subst">{token}</span>"</span>}
+)
+email = response.json()[<span class="hljs-string">"email"</span>]
+hashlib.sha256(<span class="hljs-string">f"<span class="hljs-subst">{email}</span> <span class="hljs-subst">{creds.token_expiry.year}</span>"</span>.encode()).hexdigest()[-<span class="hljs-number">5</span>:]
+</code></pre>
+
+      <label class="form-label" for="q-use-colab">What is the result? (It should be a 5-character string)</label>
+      <input class="form-control" id="q-use-colab" name="q-use-colab" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-use-colab" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-use-colab-image-library" id="hq-use-colab-image-library">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$604981738$-->5</span>
+              <!--?lit$604981738$-->Use an Image Library in Google Colab (<!--?lit$604981738$-->0.5 <!--?lit$604981738$-->marks)
+            </div>
+            <!--?lit$604981738$-->
+            <div class="card-body"><!--?lit$604981738$-->
+    <div class="mb-3">
+      <p>
+        <a href="https://exam.sanand.workers.dev/lenna.webp" download="">Download this image</a>. Create a new
+        <a href="https://colab.research.google.com/">Google Colab notebook</a> and run this code (after fixing a mistake
+        in it) to calculate the number of pixels with a certain minimum brightness:
+      </p>
+      <pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image
+<span class="hljs-keyword">from</span> google.colab <span class="hljs-keyword">import</span> files
+<span class="hljs-keyword">import</span> colorsys
+
+<span class="hljs-comment"># There is a mistake in the line below. Fix it</span>
+image = Image.<span class="hljs-built_in">open</span>(<span class="hljs-built_in">list</span>(files.upload().keys)[<span class="hljs-number">0</span>])
+
+rgb = np.array(image) / <span class="hljs-number">255.0</span>
+lightness = np.apply_along_axis(<span class="hljs-keyword">lambda</span> x: colorsys.rgb_to_hls(*x)[<span class="hljs-number">1</span>], <span class="hljs-number">2</span>, rgb)
+light_pixels = np.<span class="hljs-built_in">sum</span>(lightness &gt; <span class="hljs-number">0.848</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f'Number of pixels with lightness &gt; 0.848: <span class="hljs-subst">{light_pixels}</span>'</span>)</code></pre>
+
+      <label class="form-label" for="q-use-colab-image-library">What is the result? (It should be a number)</label>
+      <input class="form-control" id="q-use-colab-image-library" name="q-use-colab-image-library" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-use-colab-image-library" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-vercel-python" id="hq-vercel-python">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$604981738$-->6</span>
+              <!--?lit$604981738$-->Deploy a Python API to Vercel (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)
+            </div>
+            <!--?lit$604981738$--><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>Serverless hosting: Vercel</h2>
+<!--
+
+Why Vercel? I evaluated from https://survey.stackoverflow.co/2024/technology#2-cloud-platforms
+
+- AWS, Azure, Google Cloud are too complex for beginners
+- Cloudflare (next most popular, widely admired) Python support is in beta
+- Hetzner (most admired), Supabase (next most admired) do not have a serverless platform
+- Fly.io (next most admired) does not have a free tier
+- Heroku (used in previous terms) is the least admired
+- Vercel is both popular, admired, growing, has a free plan, and a simple API
+
+-->
+
+<p>Serverless platforms let you rent a single function instead of an entire machine. They're perfect for small web tools that <em>don't need to run all the time</em>. Here are some common real-life uses:</p>
+<ul>
+<li>A contact form that emails you when someone wants to hire you (runs for 2-3 seconds, a few times per day)</li>
+<li>A tool that converts uploaded photos to black and white (runs for 5-10 seconds when someone uploads a photo)</li>
+<li>A chatbot that answers basic questions about your business hours (runs for 1-2 seconds per question)</li>
+<li>A newsletter sign-up that adds emails to your mailing list (runs for 1 second per sign-up)</li>
+<li>A webhook that posts your Etsy sales to Discord (runs for 1 second whenever you make a sale)</li>
+</ul>
+<p>You only pay when someone uses your tool, and the platform automatically handles busy periods. For example, if 100 people fill out your contact form at once, the platform creates 100 temporary copies of your code to handle them all. When they're done, these copies disappear. It's cheaper than running a full-time server because you're not paying for the time when no one is using your tool - most tools are idle 95% of the time!</p>
+<p>Rather than writing a full program, serverless platforms let you write functions. These functions are called via HTTP requests. They run in a cloud environment and are scaled up and down automatically. But this means you write programs in a different style. For example:</p>
+<ul>
+<li>You can't <code>pip install</code> packages - you have to use <code>requirements.txt</code></li>
+<li>You can't read or write files from the file system - you can only use APIs.</li>
+<li>You can't run commands (e.g. <code>subprocess.run()</code>)</li>
+</ul>
+<p><a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a> is a cloud platform optimized for frontend frameworks and serverless functions. Vercel is tightly integrated with GitHub. Pushing to your repository automatically triggers new deployments.</p>
+<p>Here's a <a href="https://vercel.com/docs/functions/runtimes/python" target="_blank" rel="noopener noreferrer">quickstart</a>. <a href="https://vercel.com/signup" target="_blank" rel="noopener noreferrer">Sign-up with Vercel</a>. Create an empty <code>git</code> repo with this <code>api/index.py</code> file.</p>
+<p>To deploy a FastAPI app, add a <code>requirements.txt</code> file with <code>fastapi</code> as a dependency.</p>
+<pre><code class="language-text hljs language-plaintext" data-highlighted="yes">fastapi
+</code></pre>
+<p>Add your FastAPI code to a file, e.g. <code>main.py</code>.</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-comment"># main.py</span>
+<span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> FastAPI
+
+app = FastAPI()
+
+<span class="hljs-meta">@app.get(<span class="hljs-params"><span class="hljs-string">"/"</span></span>)</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">read_root</span>():
+    <span class="hljs-keyword">return</span> {<span class="hljs-string">"message"</span>: <span class="hljs-string">"Hello, World!"</span>}
+</code></pre>
+<p>Add a <code>vercel.json</code> file to the root of your repository.</p>
+<pre><code class="language-json hljs" data-highlighted="yes"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">"builds"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">{</span> <span class="hljs-attr">"src"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"main.py"</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">"use"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"@vercel/python"</span> <span class="hljs-punctuation">}</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"routes"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">{</span> <span class="hljs-attr">"src"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"/(.*)"</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">"dest"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"main.py"</span> <span class="hljs-punctuation">}</span><span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<p>On the command line, run:</p>
+<ul>
+<li><code>npx vercel</code> to deploy a test version</li>
+<li><code>npx vercel --prod</code> to deploy to production</li>
+</ul>
+<p><strong>Environment Variables</strong>. Use <code>npx vercel env add</code> to add environment variables. In your code, use <code>os.environ.get('SECRET_KEY')</code> to access them.</p>
+<h3>Videos</h3>
+<p><a href="https://youtu.be/sPmat30SE4k" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(5).webp" alt="Vercel Product Walkthrough" class="img-fluid"></a></p>
+<p><a href="https://youtu.be/8R-cetf_sZ4" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(6).webp" alt="Deploy FastAPI on Vercel | Quick and Easy Tutorial" class="img-fluid"></a></p>
+</div><!---->
+            <div class="card-body"><!--?lit$604981738$-->
+    <div class="mb-3">
+      <p>
+        Download this
+        <button class="btn btn-sm btn-outline-primary" type="button">
+          <!--?lit$604981738$-->q-vercel-python.json
+        </button>
+        which has the marks of <!--?lit$604981738$-->100 imaginary students.
+      </p>
+      <p>
+        Create and deploy a Python app to <a href="https://vercel.com/">Vercel</a>. Expose an API so that when a request
+        like <code>https://your-app.vercel.app/api?name=X&amp;name=Y</code> is made, it returns a JSON response with the
+        marks of the names X and Y in the same order, like this:
+      </p>
+      <pre><code class="language-json hljs" data-highlighted="yes"><span class="hljs-punctuation">{</span> <span class="hljs-attr">"marks"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-number">10</span><span class="hljs-punctuation">,</span> <span class="hljs-number">20</span><span class="hljs-punctuation">]</span> <span class="hljs-punctuation">}</span></code></pre>
+      <p>Make sure you enable <strong>CORS</strong> to allow GET requests from any origin.</p>
+      <label class="form-label" for="q-vercel-python">
+        What is the Vercel URL? It should look like:
+        <code>https://your-app.vercel.app/api</code>
+      </label>
+      <input class="form-control" id="q-vercel-python" name="q-vercel-python" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-vercel-python" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-github-action" id="hq-github-action">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$604981738$-->7</span>
+              <!--?lit$604981738$-->Create a GitHub Action (<!--?lit$604981738$-->1.5 <!--?lit$604981738$-->marks)
+            </div>
+            <!--?lit$604981738$--><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>CI/CD: GitHub Actions</h2>
+<p><a href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer">GitHub Actions</a> is a powerful automation platform built into GitHub. It helps automate your development workflow - running tests, deploying applications, updating datasets, retraining models, etc.</p>
+<ul>
+<li>Understand the basics of <a href="https://docs.github.com/en/actions/writing-workflows/quickstart" target="_blank" rel="noopener noreferrer">YAML configuration files</a></li>
+<li>Explore the <a href="https://github.com/marketplace?type=actions" target="_blank" rel="noopener noreferrer">pre-built actions from the marketplace</a></li>
+<li>How to <a href="https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions" target="_blank" rel="noopener noreferrer">handle secrets securely</a></li>
+<li><a href="https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/triggering-a-workflow" target="_blank" rel="noopener noreferrer">Triggering a workflow</a></li>
+<li>Staying within the <a href="https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions" target="_blank" rel="noopener noreferrer">free tier limits</a></li>
+<li><a href="https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/caching-dependencies-to-speed-up-workflows" target="_blank" rel="noopener noreferrer">Caching dependencies to speed up workflows</a></li>
+</ul>
+<p>Here is a sample <code>.github/workflows/iss-location.yml</code> that runs daily, appends the International Space Station location data into <code>iss-location.json</code>, and commits it to the repository.</p>
+<pre><code class="language-yaml hljs" data-highlighted="yes"><span class="hljs-attr">name:</span> <span class="hljs-string">Log</span> <span class="hljs-string">ISS</span> <span class="hljs-string">Location</span> <span class="hljs-string">Data</span> <span class="hljs-string">Daily</span>
+
+<span class="hljs-attr">on:</span>
+  <span class="hljs-attr">schedule:</span>
+    <span class="hljs-comment"># Runs at 12:00 UTC (noon) every day</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">cron:</span> <span class="hljs-string">"0 12 * * *"</span>
+  <span class="hljs-attr">workflow_dispatch:</span> <span class="hljs-comment"># Allows manual triggering</span>
+
+<span class="hljs-attr">jobs:</span>
+  <span class="hljs-attr">collect-iss-data:</span>
+    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
+    <span class="hljs-attr">permissions:</span>
+      <span class="hljs-attr">contents:</span> <span class="hljs-string">write</span>
+
+    <span class="hljs-attr">steps:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Checkout</span> <span class="hljs-string">repository</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v4</span>
+
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Install</span> <span class="hljs-string">uv</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">astral-sh/setup-uv@v5</span>
+
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Fetch</span> <span class="hljs-string">ISS</span> <span class="hljs-string">location</span> <span class="hljs-string">data</span>
+        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span> <span class="hljs-comment"># python</span>
+          <span class="hljs-string">uv</span> <span class="hljs-string">run</span> <span class="hljs-string">--with</span> <span class="hljs-string">requests</span> <span class="hljs-string">python</span> <span class="hljs-string">&lt;&lt;</span> <span class="hljs-string">'EOF'</span>
+          <span class="hljs-string">import</span> <span class="hljs-string">requests</span>
+
+          <span class="hljs-string">data</span> <span class="hljs-string">=</span> <span class="hljs-string">requests.get('http://api.open-notify.org/iss-now.json').text</span>
+          <span class="hljs-string">with</span> <span class="hljs-string">open('iss-location.jsonl',</span> <span class="hljs-string">'a'</span><span class="hljs-string">)</span> <span class="hljs-attr">as f:</span>
+              <span class="hljs-string">f.write(data</span> <span class="hljs-string">+</span> <span class="hljs-string">'\n'</span><span class="hljs-string">)</span>
+          <span class="hljs-string">'EOF'</span>
+
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Commit</span> <span class="hljs-string">and</span> <span class="hljs-string">push</span> <span class="hljs-string">changes</span>
+        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span> <span class="hljs-comment"># shell</span>
+          <span class="hljs-string">git</span> <span class="hljs-string">config</span> <span class="hljs-string">--local</span> <span class="hljs-string">user.email</span> <span class="hljs-string">"github-actions[bot]@users.noreply.github.com"</span>
+          <span class="hljs-string">git</span> <span class="hljs-string">config</span> <span class="hljs-string">--local</span> <span class="hljs-string">user.name</span> <span class="hljs-string">"github-actions[bot]"</span>
+          <span class="hljs-string">git</span> <span class="hljs-string">add</span> <span class="hljs-string">iss-location.jsonl</span>
+          <span class="hljs-string">git</span> <span class="hljs-string">commit</span> <span class="hljs-string">-m</span> <span class="hljs-string">"Update ISS position data [skip ci]"</span> <span class="hljs-string">||</span> <span class="hljs-string">exit</span> <span class="hljs-number">0</span>
+          <span class="hljs-string">git</span> <span class="hljs-string">push</span>
+</code></pre>
+<p>Tools:</p>
+<ul>
+<li><a href="https://cli.github.com/" target="_blank" rel="noopener noreferrer">GitHub CLI</a>: Manage workflows from terminal</li>
+<li><a href="https://github.com/github/super-linter" target="_blank" rel="noopener noreferrer">Super-Linter</a>: Validate code style</li>
+<li><a href="https://github.com/release-drafter/release-drafter" target="_blank" rel="noopener noreferrer">Release Drafter</a>: Automate releases</li>
+<li><a href="https://github.com/nektos/act" target="_blank" rel="noopener noreferrer">act</a>: Run actions locally</li>
+</ul>
+<p><a href="https://youtu.be/mFFXuXjVgkU" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(7).webp" alt="Github Actions CI/CD - Everything you need to know to get started" class="img-fluid"></a></p>
+<ul>
+<li><a href="https://youtu.be/1tD7km5jK70" target="_blank" rel="noopener noreferrer">How to handle secrets in GitHub Actions</a></li>
+</ul>
+</div><!---->
+            <div class="card-body"><!--?lit$604981738$-->
+    <div class="mb-3">
+      <p>
+        Create a <a href="https://github.com/features/actions">GitHub action</a> on one of your GitHub repositories.
+        Make sure one of the steps in the action has a name that contains your email address <code><!--?lit$604981738$-->22f3001203@ds.study.iitm.ac.in</code>.
+        For example:
+      </p>
+      <pre><code class="language-yaml hljs" data-highlighted="yes">
+<span class="hljs-attr">jobs:</span>
+  <span class="hljs-attr">test:</span>
+    <span class="hljs-attr">steps:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">22f3001203@ds.study.iitm.ac.in</span>
+        <span class="hljs-attr">run:</span> <span class="hljs-string">echo</span> <span class="hljs-string">"Hello, world!"</span>
+      </code></pre>
+      <p>Trigger the action and make sure it is the <strong>most recent action</strong>.</p>
+      <p>
+        <label class="form-label" for="q-github-action">
+          What is your repository URL? It will look like:
+          <code>https://github.com/USER/REPO</code>
+        </label>
+        <input class="form-control" id="q-github-action" name="q-github-action" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+      </p>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-github-action" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-docker-hub-image" id="hq-docker-hub-image">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$604981738$-->8</span>
+              <!--?lit$604981738$-->Push an image to Docker Hub (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)
+            </div>
+            <!--?lit$604981738$--><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>Containers: Docker, Podman</h2>
+<p><a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">Docker</a> and <a href="https://podman.io/" target="_blank" rel="noopener noreferrer">Podman</a> are containerization tools that package your application and its dependencies into a standardized unit for software development and deployment.</p>
+<p>Docker is the industry standard. Podman is compatible with Docker and has better security (and a slightly more open license). In this course, we recommend Podman but Docker works in the same way.</p>
+<p>Initialize the container engine:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes">podman machine init
+podman machine start
+</code></pre>
+<p>Common Operations. (You can use <code>docker</code> instead of <code>podman</code> in the same way.)</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Pull an image</span>
+podman pull python:3.11-slim
+
+<span class="hljs-comment"># Run a container</span>
+podman run -it python:3.11-slim
+
+<span class="hljs-comment"># List containers</span>
+podman ps -a
+
+<span class="hljs-comment"># Stop container</span>
+podman stop container_id
+
+<span class="hljs-comment"># Scan image for vulnerabilities</span>
+podman scan myapp:latest
+
+<span class="hljs-comment"># Remove container</span>
+podman <span class="hljs-built_in">rm</span> container_id
+
+<span class="hljs-comment"># Remove all stopped containers</span>
+podman container prune
+</code></pre>
+<p>You can create a <code>Dockerfile</code> to build a container image. Here's a sample <code>Dockerfile</code> that converts a Python script into a container image.</p>
+<pre><code class="language-dockerfile hljs" data-highlighted="yes"><span class="hljs-keyword">FROM</span> python:<span class="hljs-number">3.11</span>-slim
+<span class="hljs-comment"># Set working directory</span>
+<span class="hljs-keyword">WORKDIR</span><span class="language-bash"> /app</span>
+<span class="hljs-comment"># Typically, you would use `COPY . .` to copy files from the host machine,</span>
+<span class="hljs-comment"># but here we're just using a simple script.</span>
+<span class="hljs-keyword">RUN</span><span class="language-bash"> <span class="hljs-built_in">echo</span> <span class="hljs-string">'print("Hello, world!")'</span> &gt; app.py</span>
+<span class="hljs-comment"># Run the script</span>
+<span class="hljs-keyword">CMD</span><span class="language-bash"> [<span class="hljs-string">"python"</span>, <span class="hljs-string">"app.py"</span>]</span>
+</code></pre>
+<p>To build, run, and deploy the container, run these commands:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Create an account on https://hub.docker.com/ and then login</span>
+podman login docker.io
+
+<span class="hljs-comment"># Build and run the container</span>
+podman build -t py-hello .
+podman run -it py-hello
+
+<span class="hljs-comment"># Push the container to Docker Hub. Replace $DOCKER_HUB_USERNAME with your Docker Hub username.</span>
+podman push py-hello:latest docker.io/<span class="hljs-variable">$DOCKER_HUB_USERNAME</span>/py-hello
+
+<span class="hljs-comment"># Push adding a specific tag, e.g. dev</span>
+TAG=dev podman push py-hello docker.io/<span class="hljs-variable">$DOCKER_HUB_USERNAME</span>/py-hello:<span class="hljs-variable">$TAG</span>
+</code></pre>
+<p>Tools:</p>
+<ul>
+<li><a href="https://github.com/wagoodman/dive" target="_blank" rel="noopener noreferrer">Dive</a>: Explore image layers</li>
+<li><a href="https://github.com/containers/skopeo" target="_blank" rel="noopener noreferrer">Skopeo</a>: Work with container images</li>
+<li><a href="https://github.com/aquasecurity/trivy" target="_blank" rel="noopener noreferrer">Trivy</a>: Security scanner</li>
+</ul>
+<p><a href="https://youtu.be/YXfA5O5Mr18" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(8).webp" alt="Podman Tutorial Zero to Hero | Full 1 Hour Course" class="img-fluid"></a></p>
+<p><a href="https://youtu.be/gAkwW2tuIqE" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(9).webp" alt="Learn Docker in 7 Easy Steps - Full Beginner&#39;s Tutorial" class="img-fluid"></a></p>
+<ul>
+<li>Optional: For Windows, see <a href="https://youtu.be/5RQbdMn04Oc" target="_blank" rel="noopener noreferrer">WSL 2 with Docker getting started</a></li>
+</ul>
+</div><!---->
+            <div class="card-body"><!--?lit$604981738$-->
+    <div class="mb-3">
+      <p>
+        Create and push an image to <a href="https://hub.docker.com/">Docker Hub</a>. Add a tag named
+        <code><!--?lit$604981738$-->22f3001203</code> to the image.
+      </p>
+      <label class="form-label" for="q-docker-hub-image">
+        What is the Docker image URL? It should look like:
+        <code>https://hub.docker.com/repository/docker/$USER/$REPO/general</code>
+      </label>
+      <input class="form-control" id="q-docker-hub-image" name="q-docker-hub-image" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-docker-hub-image" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-fastapi" id="hq-fastapi">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$604981738$-->9</span>
+              <!--?lit$604981738$-->Write a FastAPI server to serve data (<!--?lit$604981738$-->1 <!--?lit$604981738$-->mark)
+            </div>
+            <!--?lit$604981738$--><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>Web Framework: FastAPI</h2>
+<p><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer">FastAPI</a> is a modern Python web framework for building APIs with automatic interactive documentation. It's fast, easy to use, and designed for building production-ready REST APIs.</p>
+<p>Here's a minimal FastAPI app, <code>app.py</code>:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-comment"># /// script</span>
+<span class="hljs-comment"># requires-python = "&gt;=3.11"</span>
+<span class="hljs-comment"># dependencies = [</span>
+<span class="hljs-comment">#   "fastapi",</span>
+<span class="hljs-comment">#   "uvicorn",</span>
+<span class="hljs-comment"># ]</span>
+<span class="hljs-comment"># ///</span>
+
+<span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> FastAPI
+
+app = FastAPI()
+
+<span class="hljs-meta">@app.get(<span class="hljs-params"><span class="hljs-string">"/"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">root</span>():
+    <span class="hljs-keyword">return</span> {<span class="hljs-string">"message"</span>: <span class="hljs-string">"Hello!"</span>}
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+    <span class="hljs-keyword">import</span> uvicorn
+    uvicorn.run(app, host=<span class="hljs-string">"0.0.0.0"</span>, port=<span class="hljs-number">8000</span>)
+</code></pre>
+<p>Run this with <code>uv run app.py</code>.</p>
+<ol>
+<li><p><strong>Handle errors by raising HTTPException</strong></p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> HTTPException
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_item</span>(<span class="hljs-params">item_id: <span class="hljs-built_in">int</span></span>):
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> valid_item(item_id):
+        <span class="hljs-keyword">raise</span> HTTPException(
+            status_code=<span class="hljs-number">404</span>,
+            detail=<span class="hljs-string">f"Item <span class="hljs-subst">{item_id}</span> not found"</span>
+        )
+</code></pre>
+</li>
+<li><p><strong>Use middleware for logging</strong></p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> Request
+<span class="hljs-keyword">import</span> time
+
+<span class="hljs-meta">@app.middleware(<span class="hljs-params"><span class="hljs-string">"http"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">add_timing</span>(<span class="hljs-params">request: Request, call_next</span>):
+    start = time.time()
+    response = <span class="hljs-keyword">await</span> call_next(request)
+    response.headers[<span class="hljs-string">"X-Process-Time"</span>] = <span class="hljs-built_in">str</span>(time.time() - start)
+    <span class="hljs-keyword">return</span> response
+</code></pre>
+</li>
+</ol>
+<p>Tools:</p>
+<ul>
+<li><a href="https://fastapi.tiangolo.com/tutorial/fastapi-cli/" target="_blank" rel="noopener noreferrer">FastAPI CLI</a>: Project scaffolding</li>
+<li><a href="https://pydantic-docs.helpmanual.io/" target="_blank" rel="noopener noreferrer">Pydantic</a>: Data validation</li>
+<li><a href="https://sqlmodel.tiangolo.com/" target="_blank" rel="noopener noreferrer">SQLModel</a>: SQL databases</li>
+<li><a href="https://fastapi-users.github.io/" target="_blank" rel="noopener noreferrer">FastAPI Users</a>: Authentication</li>
+</ul>
+<p>Watch this FastAPI Course for Beginners (64 min):</p>
+<p><a href="https://youtu.be/tLKKmouUams" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(10).webp" alt="FastAPI Course for Beginners (64 min)" class="img-fluid"></a></p>
+</div><!----><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>REST APIs</h2>
+<p>REST (Representational State Transfer) APIs are the standard way to build web services that allow different systems to communicate over HTTP. They use standard HTTP methods and JSON for data exchange.</p>
+<p>Watch this comprehensive introduction to REST APIs (52 min):</p>
+<p><a href="https://youtu.be/qbLc5a9jdXo" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(11).webp" alt="REST API Crash Course - Introduction + Full Python API Tutorial (52)" class="img-fluid"></a></p>
+<p>Key Concepts:</p>
+<ol>
+<li><strong>HTTP Methods</strong><ul>
+<li><code>GET</code>: Retrieve data</li>
+<li><code>POST</code>: Create new data</li>
+<li><code>PUT/PATCH</code>: Update existing data</li>
+<li><code>DELETE</code>: Remove data</li>
+</ul>
+</li>
+<li><strong>Status Codes</strong><ul>
+<li><code>2xx</code>: Success (200 OK, 201 Created)</li>
+<li><code>4xx</code>: Client errors (400 Bad Request, 404 Not Found)</li>
+<li><code>5xx</code>: Server errors (500 Internal Server Error)</li>
+</ul>
+</li>
+</ol>
+<p>Here's a minimal REST API using FastAPI. Run this <code>server.py</code> script via <code>uv run server.py</code>:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-comment"># /// script</span>
+<span class="hljs-comment"># requires-python = "&gt;=3.13"</span>
+<span class="hljs-comment"># dependencies = [</span>
+<span class="hljs-comment">#     "fastapi",</span>
+<span class="hljs-comment">#     "uvicorn",</span>
+<span class="hljs-comment"># ]</span>
+<span class="hljs-comment"># ///</span>
+<span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> FastAPI, HTTPException
+<span class="hljs-keyword">from</span> typing <span class="hljs-keyword">import</span> <span class="hljs-type">Dict</span>, <span class="hljs-type">List</span>
+
+app = FastAPI()
+
+<span class="hljs-comment"># Create a list of items that will act like a database</span>
+items: <span class="hljs-type">List</span>[<span class="hljs-type">Dict</span>[<span class="hljs-built_in">str</span>, <span class="hljs-built_in">float</span> | <span class="hljs-built_in">int</span> | <span class="hljs-built_in">str</span>]] = []
+
+<span class="hljs-comment"># Create a GET endpoint that returns all items</span>
+<span class="hljs-meta">@app.get(<span class="hljs-params"><span class="hljs-string">"/items"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_items</span>() -&gt; <span class="hljs-type">List</span>[<span class="hljs-type">Dict</span>[<span class="hljs-built_in">str</span>, <span class="hljs-built_in">float</span> | <span class="hljs-built_in">int</span> | <span class="hljs-built_in">str</span>]]:
+    <span class="hljs-keyword">return</span> items
+
+<span class="hljs-comment"># Create a GET endpoint that returns a specific item by ID</span>
+<span class="hljs-meta">@app.get(<span class="hljs-params"><span class="hljs-string">"/items/{item_id}"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_item</span>(<span class="hljs-params">item_id: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-type">Dict</span>[<span class="hljs-built_in">str</span>, <span class="hljs-built_in">float</span> | <span class="hljs-built_in">int</span> | <span class="hljs-built_in">str</span>]:
+    <span class="hljs-keyword">if</span> item := <span class="hljs-built_in">next</span>((i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> items <span class="hljs-keyword">if</span> i[<span class="hljs-string">"id"</span>] == item_id), <span class="hljs-literal">None</span>):
+        <span class="hljs-keyword">return</span> item
+    <span class="hljs-keyword">raise</span> HTTPException(status_code=<span class="hljs-number">404</span>, detail=<span class="hljs-string">"Item not found"</span>)
+
+<span class="hljs-comment"># Create a POST endpoint that creates a new item</span>
+<span class="hljs-meta">@app.post(<span class="hljs-params"><span class="hljs-string">"/items"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">create_item</span>(<span class="hljs-params">item: <span class="hljs-type">Dict</span>[<span class="hljs-built_in">str</span>, <span class="hljs-built_in">float</span> | <span class="hljs-built_in">str</span>]</span>) -&gt; <span class="hljs-type">Dict</span>[<span class="hljs-built_in">str</span>, <span class="hljs-built_in">float</span> | <span class="hljs-built_in">int</span> | <span class="hljs-built_in">str</span>]:
+    new_item = {<span class="hljs-string">"id"</span>: <span class="hljs-built_in">len</span>(items) + <span class="hljs-number">1</span>, <span class="hljs-string">"name"</span>: item[<span class="hljs-string">"name"</span>], <span class="hljs-string">"price"</span>: <span class="hljs-built_in">float</span>(item[<span class="hljs-string">"price"</span>])}
+    items.append(new_item)
+    <span class="hljs-keyword">return</span> new_item
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+    <span class="hljs-keyword">import</span> uvicorn
+    uvicorn.run(app, host=<span class="hljs-string">"0.0.0.0"</span>, port=<span class="hljs-number">8000</span>)
+</code></pre>
+<p>Test the API with curl:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Get all items</span>
+curl http://localhost:8000/items
+
+<span class="hljs-comment"># Create an item</span>
+curl -X POST http://localhost:8000/items \
+  -H <span class="hljs-string">"Content-Type: application/json"</span> \
+  -d <span class="hljs-string">'{"name": "Book", "price": 29.99}'</span>
+
+<span class="hljs-comment"># Get specific item</span>
+curl http://localhost:8000/items/1
+</code></pre>
+<p>Best Practices:</p>
+<ol>
+<li><strong>Use Nouns for Resources</strong><ul>
+<li>Good: <code>/users</code>, <code>/posts</code></li>
+<li>Bad: <code>/getUsers</code>, <code>/createPost</code></li>
+</ul>
+</li>
+<li><strong>Version Your API</strong><pre><code data-highlighted="yes" class="hljs language-bash">/api/v1/users
+/api/v2/users
+</code></pre>
+</li>
+<li><strong>Handle Errors Consistently</strong><pre><code class="language-python hljs" data-highlighted="yes">{
+  <span class="hljs-string">"error"</span>: <span class="hljs-string">"Not Found"</span>,
+  <span class="hljs-string">"message"</span>: <span class="hljs-string">"User 123 not found"</span>,
+  <span class="hljs-string">"status_code"</span>: <span class="hljs-number">404</span>
+}
+</code></pre>
+</li>
+<li><strong>Use Query Parameters for Filtering</strong><pre><code data-highlighted="yes" class="hljs language-dts"><span class="hljs-keyword">/api/</span>posts?<span class="hljs-attr">status</span><span class="hljs-operator">=</span>published<span class="hljs-variable">&amp;category</span>=tech
+</code></pre>
+</li>
+<li><strong>Implement Pagination</strong><pre><code data-highlighted="yes" class="hljs language-bash">/api/posts?page=2&amp;<span class="hljs-built_in">limit</span>=10
+</code></pre>
+</li>
+</ol>
+<p>Tools:</p>
+<ul>
+<li><a href="https://www.postman.com/" target="_blank" rel="noopener noreferrer">Postman</a>: API testing and documentation</li>
+<li><a href="https://swagger.io/" target="_blank" rel="noopener noreferrer">Swagger/OpenAPI</a>: API documentation</li>
+<li><a href="https://httpie.io/" target="_blank" rel="noopener noreferrer">HTTPie</a>: Modern command-line HTTP client</li>
+<li><a href="https://json-schema.org/" target="_blank" rel="noopener noreferrer">JSON Schema</a>: API request/response validation</li>
+</ul>
+<p>Learn more about REST APIs:</p>
+<ul>
+<li><a href="https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/" target="_blank" rel="noopener noreferrer">REST API Design Best Practices</a></li>
+<li><a href="https://github.com/microsoft/api-guidelines" target="_blank" rel="noopener noreferrer">Microsoft REST API Guidelines</a></li>
+<li><a href="https://cloud.google.com/apis/design" target="_blank" rel="noopener noreferrer">Google API Design Guide</a></li>
+</ul>
+</div><!----><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>CORS: Cross-Origin Resource Sharing</h2>
+<p>CORS (Cross-Origin Resource Sharing) is a security mechanism that controls how web browsers handle requests between different origins (domains, protocols, or ports). Data scientists need CORS for APIs serving data or analysis to a browser on a different domain.</p>
+<p>Watch this practical explanation of CORS (3 min):</p>
+<p><a href="https://youtu.be/4KHiSt0oLJ0" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(12).webp" alt="CORS in 100 Seconds" class="img-fluid"></a></p>
+<p>Key CORS concepts:</p>
+<ul>
+<li><strong>Same-Origin Policy</strong>: Browsers block requests between different origins by default</li>
+<li><strong>CORS Headers</strong>: Server responses must include specific headers to allow cross-origin requests</li>
+<li><strong>Preflight Requests</strong>: Browsers send OPTIONS requests to check if the actual request is allowed</li>
+<li><strong>Credentials</strong>: Special handling required for requests with cookies or authentication</li>
+</ul>
+<p>If you're exposing your API with a GET request publicly, the only thing you need to do is set the HTTP header <code>Access-Control-Allow-Origin: *</code>.</p>
+<p>Here are other common CORS headers:</p>
+<pre><code class="language-http hljs" data-highlighted="yes"><span class="hljs-attribute">Access-Control-Allow-Origin</span><span class="hljs-punctuation">: </span>https://example.com
+<span class="hljs-attribute">Access-Control-Allow-Methods</span><span class="hljs-punctuation">: </span>GET, POST, PUT, DELETE
+<span class="hljs-attribute">Access-Control-Allow-Headers</span><span class="hljs-punctuation">: </span>Content-Type, Authorization
+<span class="hljs-attribute">Access-Control-Allow-Credentials</span><span class="hljs-punctuation">: </span>true
+</code></pre>
+<p>To implement CORS in FastAPI, use the <a href="https://fastapi.tiangolo.com/tutorial/cors/" target="_blank" rel="noopener noreferrer"><code>CORSMiddleware</code> middleware</a>:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> FastAPI
+<span class="hljs-keyword">from</span> fastapi.middleware.cors <span class="hljs-keyword">import</span> CORSMiddleware
+
+app = FastAPI()
+
+app.add_middleware(CORSMiddleware, allow_origins=[<span class="hljs-string">"*"</span>]) <span class="hljs-comment"># Allow GET requests from all origins</span>
+<span class="hljs-comment"># Or, provide more granular control:</span>
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[<span class="hljs-string">"https://example.com"</span>],  <span class="hljs-comment"># Allow a specific domain</span>
+    allow_credentials=<span class="hljs-literal">True</span>,  <span class="hljs-comment"># Allow cookies</span>
+    allow_methods=[<span class="hljs-string">"GET"</span>, <span class="hljs-string">"POST"</span>, <span class="hljs-string">"PUT"</span>, <span class="hljs-string">"DELETE"</span>],  <span class="hljs-comment"># Allow specific methods</span>
+    allow_headers=[<span class="hljs-string">"*"</span>],  <span class="hljs-comment"># Allow all headers</span>
+)
+</code></pre>
+<p>Testing CORS with JavaScript:</p>
+<pre><code class="language-javascript hljs" data-highlighted="yes"><span class="hljs-comment">// Simple request</span>
+<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">"https://api.example.com/data"</span>, {
+  <span class="hljs-attr">method</span>: <span class="hljs-string">"GET"</span>,
+  <span class="hljs-attr">headers</span>: { <span class="hljs-string">"Content-Type"</span>: <span class="hljs-string">"application/json"</span> },
+});
+
+<span class="hljs-comment">// Request with credentials</span>
+<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">"https://api.example.com/data"</span>, {
+  <span class="hljs-attr">credentials</span>: <span class="hljs-string">"include"</span>,
+  <span class="hljs-attr">headers</span>: { <span class="hljs-string">"Content-Type"</span>: <span class="hljs-string">"application/json"</span> },
+});
+</code></pre>
+<p>Useful CORS debugging tools:</p>
+<ul>
+<li><a href="https://cors-test.codehappy.dev/" target="_blank" rel="noopener noreferrer">CORS Checker</a>: Test CORS configurations</li>
+<li>Browser DevTools Network tab: Inspect CORS headers and preflight requests</li>
+<li><a href="https://github.com/Rob--W/cors-anywhere" target="_blank" rel="noopener noreferrer">cors-anywhere</a>: CORS proxy for development</li>
+</ul>
+<p>Common CORS errors and solutions:</p>
+<ul>
+<li><code>No 'Access-Control-Allow-Origin' header</code>: Configure server to send proper CORS headers</li>
+<li><code>Request header field not allowed</code>: Add required headers to <code>Access-Control-Allow-Headers</code></li>
+<li><code>Credentials flag</code>: Set both <code>credentials: 'include'</code> and <code>Access-Control-Allow-Credentials: true</code></li>
+<li><code>Wild card error</code>: Cannot use <code>*</code> with credentials; specify exact origins</li>
+</ul>
+</div><!---->
+            <div class="card-body"><!--?lit$604981738$-->
+    <div class="mb-3">
+      <p>
+        Download
+        <button class="btn btn-sm btn-outline-primary" type="button">
+          <!--?lit$604981738$-->q-fastapi.csv</button>. This file has 2-columns:
+        </p><ol>
+          <li>studentId: A unique identifier for each student, e.g. 1, 2, 3, ...</li>
+          <li>class: The class (including section) of the student, e.g. 1A, 1B, ... 12A, 12B, ... 12Z</li>
+        </ol>
+      <p></p>
+      <p>
+        Write a FastAPI server that serves this data. For example, <code>/api</code> should return all students data
+        (in the same row and column order as the CSV file) as a JSON like this:
+      </p>
+      <pre><code class="language-json hljs" data-highlighted="yes"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">"students"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">"studentId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"class"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"1A"</span>
+    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">"studentId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">2</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"class"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"1B"</span>
+    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span> ...
+  <span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span></code></pre>
+      <p>
+        If the URL has a query parameter <code>class</code>, it should return only students in those classes. For example,
+        <code>/api?class=1A</code> should return only students in class 1A.
+        <code>/api?class=1A&amp;class=1B</code> should return only students in class 1A and 1B.
+        There may be any number of classes specified.
+        Return students in the same order as they appear in the CSV file (not the order of the classes).
+      </p>
+      <p>Make sure you enable <strong>CORS</strong> to allow GET requests from any origin.</p>
+      <label class="form-label" for="q-fastapi">
+        What is the API URL endpoint for FastAPI? It might look like:
+        <code>http://127.0.0.1:8000/api</code>
+      </label>
+      <input class="form-control" type="url" required="" id="q-fastapi" name="q-fastapi" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+      <p class="text-muted">
+        We'll check by sending a request to this URL with <code>?class=...</code> added
+        and check if the response matches the data.
+      </p>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-fastapi" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-llamafile" id="hq-llamafile">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$604981738$-->10</span>
+              <!--?lit$604981738$-->Run a local LLM with Llamafile (<!--?lit$604981738$-->1.5 <!--?lit$604981738$-->marks)
+            </div>
+            <!--?lit$604981738$--><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>Local LLMs: Llamafile</h2>
+<p>You would have heard of Large Language Models (LLMs) like GPT-4, Claude, and Llama. Some of these models are available for free, but most of them are not.</p>
+<p>An easy way to run LLMs locally is Mozilla's <a href="https://github.com/Mozilla-Ocho/llamafile" target="_blank" rel="noopener noreferrer">Llamafile</a>. It's a single executable file that works on Windows, Mac, and Linux. No installation or configuration needed - just download and run.</p>
+<p>Watch this Llamafile Tutorial (6 min):</p>
+<p><a href="https://youtu.be/d1Fnfvat6nM" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/0.jpg" alt="Llamafile: Local LLMs Made Easy" class="img-fluid"></a></p>
+<p>Here's how to get started</p>
+<ol>
+<li><a href="https://huggingface.co/Mozilla/Llama-3.2-1B-Instruct-llamafile/blob/main/Llama-3.2-1B-Instruct.Q6_K.llamafile?download=true" target="_blank" rel="noopener noreferrer">Download <code>Llama-3.2-1B-Instruct.Q6_K.llamafile</code> (1.11 GB)</a>.</li>
+<li>From the command prompt or terminal, run <code>Llama-3.2-1B-Instruct.Q6_K.llamafile</code>.</li>
+<li>Optional: For GPU acceleration, use <code>Llama-3.2-1B-Instruct.Q6_K.llamafile --n-gpu-layers 35</code>. (Increase or decrease the number of layers based on your GPU VRAM.)</li>
+</ol>
+<p>You might see a message like this:</p>
+<pre><code class="language-text hljs language-plaintext" data-highlighted="yes">██╗     ██╗      █████╗ ███╗   ███╗ █████╗ ███████╗██╗██╗     ███████╗
+██║     ██║     ██╔══██╗████╗ ████║██╔══██╗██╔════╝██║██║     ██╔════╝
+██║     ██║     ███████║██╔████╔██║███████║█████╗  ██║██║     █████╗
+██║     ██║     ██╔══██║██║╚██╔╝██║██╔══██║██╔══╝  ██║██║     ██╔══╝
+███████╗███████╗██║  ██║██║ ╚═╝ ██║██║  ██║██║     ██║███████╗███████╗
+╚══════╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝
+software: llamafile 0.8.17
+model:    Llama-3.2-1B-Instruct-Q8_0.gguf
+compute:  13th Gen Intel Core i9-13900HX (alderlake)
+server:   http://127.0.0.1:8080/
+
+A chat between a curious human and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the human's questions.
+</code></pre>
+<p>You can now chat with the model. Type <code>/exit</code> or press <code>Ctrl+C</code> to stop.</p>
+<p>You can also visit <code>http://127.0.0.1:8080/</code> in your browser to chat with the model.</p>
+<p>LlamaFile exposes an OpenAI compatible API. Here's how to use it in Python:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">import</span> requests
+
+response = requests.post(
+    <span class="hljs-string">"http://localhost:8080/v1/chat/completions"</span>,
+    headers={<span class="hljs-string">"Content-Type"</span>: <span class="hljs-string">"application/json"</span>},
+    json={<span class="hljs-string">"messages"</span>: [{<span class="hljs-string">"role"</span>: <span class="hljs-string">"user"</span>, <span class="hljs-string">"content"</span>: <span class="hljs-string">"Write a haiku about coding"</span>}]}
+)
+<span class="hljs-built_in">print</span>(response.json()[<span class="hljs-string">"choices"</span>][<span class="hljs-number">0</span>][<span class="hljs-string">"message"</span>][<span class="hljs-string">"content"</span>])
+</code></pre>
+<p>Tools:</p>
+<ul>
+<li><a href="https://platform.openai.com/docs/api-reference/chat" target="_blank" rel="noopener noreferrer">OpenAI API compatibility</a>: Use existing OpenAI code</li>
+<li><a href="https://github.com/Mozilla-Ocho/llamafile#creating-llamafiles" target="_blank" rel="noopener noreferrer">Creating your own llamafiles</a>: Control output format</li>
+</ul>
+</div><!----><!----><div class="card-body border-bottom"><!--?lit$604981738$--><h2>Tunneling: ngrok</h2>
+<p><a href="https://ngrok.com/" target="_blank" rel="noopener noreferrer">Ngrok</a> is a tool that creates secure tunnels to your localhost, making your local development server accessible to the internet. It's essential for testing webhooks, sharing work in progress, or debugging applications in production-like environments.</p>
+<p>Run the command <code>uvx ngrok http 8000</code> to create a tunnel to your local server on port 8000. This generates a public URL that you can share with others.</p>
+<p>To get started, log into <code>ngrok.com</code> and <a href="https://dashboard.ngrok.com/get-started/your-authtoken" target="_blank" rel="noopener noreferrer">get an authtoken from the dashboard</a>. Copy it. Then run:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes">ngrok config add-authtoken <span class="hljs-variable">$YOUR_AUTHTOKEN</span>
+</code></pre>
+<p>Now you can forward any local port to the internet. For example:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Start a local server on port 8000</span>
+uv run -m http.server 8000
+
+<span class="hljs-comment"># Start HTTP tunnel</span>
+uvx ngrok http 8000
+</code></pre>
+<p><a href="https://youtu.be/dfMdLGZLXSg" target="_blank" rel="noopener noreferrer"><img src="./TDS 2025 Jan GA2 - Deployment Tools_files/sddefault(13).webp" alt="ngrok in 60 seconds" class="img-fluid"></a></p>
+</div><!---->
+            <div class="card-body"><!--?lit$604981738$-->
+    <div class="mb-3">
+      <p>
+        Download <a href="https://github.com/Mozilla-Ocho/llamafile">Llamafile</a>. Run the
+        <a href="https://huggingface.co/Mozilla/Llama-3.2-1B-Instruct-llamafile/blob/main/Llama-3.2-1B-Instruct.Q6_K.llamafile?download=true"><code>Llama-3.2-1B-Instruct.Q6_K.llamafile</code></a>
+        model with it.
+      </p>
+      <p>Create a tunnel to the Llamafile server using <a href="https://ngrok.com/">ngrok</a>.</p>
+
+      <label class="form-label" for="q-llamafile">
+        What is the ngrok URL? It might look like:
+        <code>https://[random].ngrok-free.app/</code>
+      </label>
+      <input class="form-control" type="url" required="" id="q-llamafile" name="q-llamafile" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-llamafile" disabled="">Check</button>
+            </div>
+          </div>
+        <!----></section>
+      <button type="submit" class="btn btn-success check-action" title="Check your score" disabled="">Check all</button>
+      <button type="button" class="btn btn-primary save-action" title="Save your progress" disabled="">Save</button>
+      <div id="submission-status" class="my-3"></div>
+      <p>Save regularly. Your <em>last saved</em> submission will be evaluated.</p>
+    </form>
+
+    <footer class="my-5 d-flex align-items-center justify-content-center" style="height: 50vh;">
+      <h1 class="display-4">Best of luck!</h1>
+    </footer>
+  </main>
+
+  <script type="module" src="./TDS 2025 Jan GA2 - Deployment Tools_files/bootstrap.bundle.min.js.download" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script type="module" src="./TDS 2025 Jan GA2 - Deployment Tools_files/dark-theme.js.download" integrity="sha384-WWZYgp4BxSnWElq/A+SNJoNuJ5eZf6xBLqGUBHmu6QXN+9dqtz7bTtyuBwy9O7C+" crossorigin="anonymous"></script>
+  <script src="./TDS 2025 Jan GA2 - Deployment Tools_files/client"></script>
+  <script type="module">
+    import { setup } from './exam.js';
+    setup(window.location.pathname.slice(1));
+  </script>
+
+
+
+</body></html>

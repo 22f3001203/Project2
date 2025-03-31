@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://exam.sanand.workers.dev/tds-2025-01-ga5 -->
+<html lang="en" data-bs-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TDS 2025 Jan GA5 - Data Preparation</title>
+  <link rel="icon" type="image/svg+xml" href="https://exam.sanand.workers.dev/favicon.svg">
+  <link rel="stylesheet" href="./TDS 2025 Jan GA5 - Data Preparation_files/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./TDS 2025 Jan GA5 - Data Preparation_files/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+  <link rel="stylesheet" href="./TDS 2025 Jan GA5 - Data Preparation_files/default.min.css" integrity="sha384-4Y0nObtF3CbKnh+lpzmAVdAMtQXl+ganWiiv73RcGVdRdfVIya8Cao1C8ZsVRRDz" crossorigin="anonymous">
+  <link rel="stylesheet" href="./TDS 2025 Jan GA5 - Data Preparation_files/github-dark.min.css">
+  <script src="./TDS 2025 Jan GA5 - Data Preparation_files/bundle.tracing.replay.min.js.download" crossorigin="anonymous"></script><script src="./TDS 2025 Jan GA5 - Data Preparation_files/f9b738b8a1bfb42581e666ab0a7dbb22.min.js.download" crossorigin="anonymous"></script>
+  <style>
+    body {
+      padding-top: 64px;
+    }
+
+    body[data-status="admin"] #navbar {
+      background-color: var(--bs-primary) !important;
+
+      .navbar-brand::before {
+        content: "[Admin] ";
+      }
+    }
+
+    body[data-status="running"] #navbar {
+      background-color: var(--bs-success) !important;
+    }
+
+    body[data-status="ended"] #navbar {
+      background-color: var(--bs-danger) !important;
+    }
+
+    [id] {
+      scroll-margin-top: 4rem;
+    }
+
+    textarea::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    textarea::-webkit-scrollbar-track {
+      background: #333;
+    }
+
+    textarea::-webkit-scrollbar-thumb {
+      background: #666;
+      cursor: default;
+    }
+
+    textarea::-webkit-scrollbar-thumb:hover {
+      background: #888;
+    }
+
+    /* Add a YouTube icon on top of all YouTube links with images */
+    a[href*="youtu"]:has(img[src*="ytimg"]) {
+      position: relative;
+      display: inline-block;
+    }
+    a[href*="youtu"]:has(img[src*="ytimg"])::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100px;
+      height: 100px;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-youtube" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2z"/><path d="M6.4 5.209v4.818l4.157-2.408z" fill="white"/></svg>') no-repeat center center;
+      background-size: contain;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+</style>
+<style id="googleidentityservice_button_styles">.qJTHM{-webkit-user-select:none;color:#202124;direction:ltr;-webkit-touch-callout:none;font-family:"Roboto-Regular",arial,sans-serif;-webkit-font-smoothing:antialiased;font-weight:400;margin:0;overflow:hidden;-webkit-text-size-adjust:100%}.ynRLnc{left:-9999px;position:absolute;top:-9999px}.L6cTce{display:none}.bltWBb{word-break:break-all}.hSRGPd{color:#1a73e8;cursor:pointer;font-weight:500;text-decoration:none}.Bz112c-W3lGp{height:16px;width:16px}.Bz112c-E3DyYd{height:20px;width:20px}.Bz112c-r9oPif{height:24px;width:24px}.Bz112c-uaxL4e{-webkit-border-radius:10px;border-radius:10px}.LgbsSe-Bz112c{display:block}.S9gUrf-YoZ4jf,.S9gUrf-YoZ4jf *{border:none;margin:0;padding:0}.fFW7wc-ibnC6b>.aZ2wEe>div{border-color:#4285f4}.P1ekSe-ZMv3u>div:nth-child(1){background-color:#1a73e8!important}.P1ekSe-ZMv3u>div:nth-child(2),.P1ekSe-ZMv3u>div:nth-child(3){background-image:linear-gradient(to right,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(to right,#1a73e8,#1a73e8)!important}.haAclf{display:inline-block}.nsm7Bb-HzV7m-LgbsSe{-webkit-border-radius:4px;border-radius:4px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background-color .218s,border-color .218s;transition:background-color .218s,border-color .218s;-webkit-user-select:none;-webkit-appearance:none;background-color:#fff;background-image:none;border:1px solid #dadce0;color:#3c4043;cursor:pointer;font-family:"Google Sans",arial,sans-serif;font-size:14px;height:40px;letter-spacing:0.25px;outline:none;overflow:hidden;padding:0 12px;position:relative;text-align:center;vertical-align:middle;white-space:nowrap;width:auto}@media screen and (-ms-high-contrast:active){.nsm7Bb-HzV7m-LgbsSe{border:2px solid windowText;color:windowText}}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe{font-size:14px;height:32px;letter-spacing:0.25px;padding:0 10px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe{font-size:11px;height:20px;letter-spacing:0.3px;padding:0 8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe{padding:0;width:40px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe{width:32px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe{width:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK{-webkit-border-radius:20px;border-radius:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe{-webkit-border-radius:16px;border-radius:16px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe{-webkit-border-radius:10px;border-radius:10px}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc{border:none;color:#fff}.nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc{background-color:#1a73e8}.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{background-color:#202124;color:#e8eaed}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:18px;margin-right:8px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:14px;min-width:14px;width:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:10px;min-width:10px;width:10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin-left:8px;margin-right:-4px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:10px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:4px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:3px;border-top-left-radius:3px;-webkit-border-bottom-left-radius:3px;border-bottom-left-radius:3px;display:-webkit-box;display:-webkit-flex;display:flex;justify-content:center;-webkit-align-items:center;align-items:center;background-color:#fff;height:36px;margin-left:-10px;margin-right:12px;min-width:36px;width:36px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:28px;margin-left:-8px;margin-right:10px;min-width:28px;width:28px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:16px;margin-left:-6px;margin-right:8px;min-width:16px;width:16px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:3px;border-radius:3px;margin-left:2px;margin-right:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:14px;border-radius:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:8px;border-radius:8px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-flex-direction:row;flex-direction:row;justify-content:space-between;-webkit-flex-wrap:nowrap;flex-wrap:nowrap;height:100%;position:relative;width:100%}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX{justify-content:center}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:1;flex-grow:1;font-family:"Google Sans",arial,sans-serif;font-weight:500;overflow:hidden;text-overflow:ellipsis;vertical-align:top}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-weight:300}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:0;flex-grow:0}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{-webkit-transition:background-color .218s;transition:background-color .218s;bottom:0;left:0;position:absolute;right:0;top:0}.nsm7Bb-HzV7m-LgbsSe:hover,.nsm7Bb-HzV7m-LgbsSe:focus{-webkit-box-shadow:none;box-shadow:none;border-color:rgb(210,227,252);outline:none}.nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.04)}.nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.1)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.24)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.32)}.nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY{-webkit-border-radius:50%;border-radius:50%;display:-webkit-box;display:-webkit-flex;display:flex;height:20px;margin-left:-4px;margin-right:8px;min-width:20px;width:20px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-family:"Roboto";font-size:12px;text-align:left}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf,.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS{overflow:hidden;text-overflow:ellipsis}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;color:#5f6368;fill:#5f6368;font-size:11px;font-weight:400}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#e8eaed;fill:#e8eaed}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c{height:18px;margin:-3px -3px -3px 2px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:0;border-top-left-radius:0;-webkit-border-bottom-left-radius:0;border-bottom-left-radius:0;-webkit-border-top-right-radius:3px;border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;border-bottom-right-radius:3px;margin-left:12px;margin-right:-10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.L5Fo6c-sM5MNb{border:0;display:block;left:0;position:relative;top:0}.L5Fo6c-bF1uUb{-webkit-border-radius:4px;border-radius:4px;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0}.L5Fo6c-bF1uUb:focus{border:none;outline:none}sentinel{}</style></head>
+
+<body data-status="ended">
+
+  <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" data-bs-theme="dark" id="navbar">
+    <div class="container-fluid">
+      <span class="navbar-brand" href=".">
+        <span id="countdown">Ended at Fri, 21 Feb, 2025, 11:59 pm IST</span>
+        <button id="score" type="button" class="btn btn-dark btn-sm mb-1 ms-2" disabled="">Score: 0</button>
+        <button type="button" class="btn btn-outline-light btn-sm mb-1 ms-2 check-action" title="Check your score" disabled="">Check all</button>
+        <button type="button" class="btn btn-outline-light btn-sm mb-1 ms-2 save-action" title="Save your progress" disabled="">Save</button>
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="nav-item dropdown ms-auto" role="group" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+          <button class="dark-theme-toggle btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme (auto)">
+            <i class="bi bi-circle-half"></i> <span class="d-lg-none ms-2">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><button class="dropdown-item" data-bs-theme-value="light" aria-pressed="false"><i class="me-2 bi bi-sun-fill"></i> Light</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false"><i class="me-2 bi bi-moon-stars-fill"></i> Dark</button></li>
+            <li><button class="dropdown-item active" data-bs-theme-value="auto" aria-pressed="true"><i class="me-2 bi bi-circle-half"></i> Auto</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="instructions">
+    <h1 class="display-3 my-5">
+      TDS 2025 Jan GA5 - Data Preparation
+    </h1>
+
+    <h2 class="display-6 my-5">Instructions</h2>
+    <ol>
+      <li><strong>Learn what you need</strong>. Reading material is provided, but feel free to skip it if you can answer the question. (Or learn it, just for pleasure.)</li>
+      <li><strong>Check answers regularly</strong> by pressing <kbd>Check</kbd>. It shows which answers are right or wrong. You can check multiple times.</li>
+      <li><strong>Save regularly</strong> by pressing <kbd>Save</kbd>. You can save multiple times. Your last saved submission will be evaluated.</li>
+      <li><strong>Reloading is OK</strong>. Your answers are saved in your browser (not server). Questions won't change except for randomized parameters.</li>
+      <li><strong>Browser may struggle</strong>. If you face loading issues, turn off security restrictions or try a different browser.</li>
+      <li><strong>Use anything</strong>. You can use any resources you want. The Internet, ChatGPT, friends, whatever. Use any libraries or frameworks you want.</li>
+      <li><strong>It's hackable</strong>. It's possible to get the answer to <em>some</em> questions by hacking the code for this quiz. That's allowed.</li>
+    </ol>
+    <div class="alert alert-info d-flex align-items-center p-4 border-start border-info border-2 mt-5">
+      <i class="bi bi-chat-square-text-fill fs-4 me-3"></i>
+      <div>
+        <strong>Have questions?</strong>
+        <a href="https://discourse.onlinedegree.iitm.ac.in/t/ga5-data-preparation-discussion-thread-tds-jan-2025/166576" target="_blank" class="alert-link ms-2">
+          Join the discussion on Discourse
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <section id="login" class="my-5"><!---->
+        <div id="logged-in-email" class="mb-3">You are logged in as <strong><!--?lit$139807793$-->22f3001203@ds.study.iitm.ac.in</strong>.</div>
+        <div class="mb-3">
+          <button class="btn btn-sm btn-outline-danger">
+            Logout
+          </button>
+        </div>
+      </section>
+
+    <section id="notification" class="my-5"><div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Recent saves <small class="text-muted fs-6 fw-light">(most recent is your official score)</small></h4>
+        <div class="d-flex align-items-center mt-2">
+  <button class="btn btn-sm btn-outline-primary me-2 load-answers" data-bs-toggle="collapse" data-index="0">Reload</button>
+  from 2/21/2025, 1:20:22 PM. Score: 6
+</div><div class="d-flex align-items-center mt-2">
+  <button class="btn btn-sm btn-outline-primary me-2 load-answers" data-bs-toggle="collapse" data-index="1">Reload</button>
+  from 2/11/2025, 6:37:42 PM. Score: 3
+</div><div class="d-flex align-items-center mt-2">
+  <button class="btn btn-sm btn-outline-primary me-2 load-answers" data-bs-toggle="collapse" data-index="2">Reload</button>
+  from 2/11/2025, 6:27:21 PM. Score: 2
+</div>
+        </div></section>
+
+    <section class="alert alert-info my-5 d-flex align-items-center d-none" id="loading-questions">
+      <div class="spinner-border text-primary me-2" role="status"></div>
+      <span>Loading questions...</span>
+    </section>
+
+    <form id="exam-form" class="needs-validation" novalidate="">
+      <section id="questions" class="my-5"><!----><!----><h1 class="display-6">Questions</h1><!----><!----><ol class="mt-3">
+        <!--?lit$139807793$--><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#hq-clean-up-excel-sales-data"><!--?lit$139807793$-->Clean up Excel sales data</a> (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#hq-clean-up-student-marks"><!--?lit$139807793$-->Clean up student marks</a> (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#hq-apache-log-requests"><!--?lit$139807793$-->Apache log requests</a> (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#hq-apache-log-downloads"><!--?lit$139807793$-->Apache log downloads</a> (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#hq-clean-up-sales-data"><!--?lit$139807793$-->Clean up sales data</a> (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#hq-parse-partial-json"><!--?lit$139807793$-->Parse partial JSON</a> (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#hq-extract-nested-json-keys"><!--?lit$139807793$-->Extract nested JSON keys</a> (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#hq-duckdb-social-media-interactions"><!--?lit$139807793$-->DuckDB: Social Media Interactions</a> (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#hq-transcribe-youtube"><!--?lit$139807793$-->Transcribe a YouTube video</a> (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)</li><!----><!----><li><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#hq-image-jigsaw"><!--?lit$139807793$-->Reconstruct an image</a> (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)</li><!---->
+      </ol><!----><!---->
+          <div class="card my-5" data-question="q-clean-up-excel-sales-data" id="hq-clean-up-excel-sales-data">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$139807793$-->1</span>
+              <!--?lit$139807793$-->Clean up Excel sales data (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)
+            </div>
+            <!--?lit$139807793$--><!----><div class="card-body border-bottom"><!--?lit$139807793$--><h2>Data Cleansing in Excel</h2>
+<p><a href="https://youtu.be/7du7xkqeu4s" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi_webp/7du7xkqeu4s/sddefault.webp" alt="Clean up data in Excel" class="img-fluid"></a></p>
+<p>You'll learn basic but essential data cleaning techniques in Excel, covering:</p>
+<ul>
+<li><strong>Find and Replace</strong>: Use Ctrl+H to replace or remove specific terms (e.g., removing "[more]" from country names).</li>
+<li><strong>Changing Data Formats</strong>: Convert columns from general to numerical format.</li>
+<li><strong>Removing Extra Spaces</strong>: Use the TRIM function to clean up unnecessary spaces in text.</li>
+<li><strong>Identifying and Removing Blank Cells</strong>: Highlight and delete entire rows with blank cells using the "Go To Special" function.</li>
+<li><strong>Removing Duplicates</strong>: Use the "Remove Duplicates" feature to eliminate duplicate entries, demonstrated with country names.</li>
+</ul>
+<p>Here are links used in the video:</p>
+<ul>
+<li><a href="https://docs.google.com/spreadsheets/d/1jl8tHGoxmIba4J78aJVfT9jtZv7lfCbV/view" target="_blank" rel="noopener noreferrer">List of Largest Cities Excel file</a></li>
+</ul>
+</div><!----><!----><div class="card-body border-bottom"><!--?lit$139807793$--><h2>Data Transformation in Excel</h2>
+<p><a href="https://youtu.be/gR2IY5Naja0" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi_webp/gR2IY5Naja0/sddefault.webp" alt="Data transformation in Excel" class="img-fluid"></a></p>
+<p>You'll learn data transformation techniques in Excel, covering:</p>
+<ul>
+<li><strong>Calculating Ratios</strong>: Compute metro area to city area and metro population to city population ratios.</li>
+<li><strong>Using Pivot Tables</strong>: Create pivot tables to aggregate data and identify outliers.</li>
+<li><strong>Filtering Data</strong>: Apply filters in pivot tables to analyze specific subsets of data.</li>
+<li><strong>Counting Data Occurrences</strong>: Use pivot tables to count the frequency of specific entries.</li>
+<li><strong>Creating Charts</strong>: Generate charts from pivot table data to visualize distributions and outliers.</li>
+</ul>
+<p>Here are links used in the video:</p>
+<ul>
+<li><a href="https://docs.google.com/spreadsheets/d/1jl8tHGoxmIba4J78aJVfT9jtZv7lfCbV/view" target="_blank" rel="noopener noreferrer">List of Largest Cities Excel file</a></li>
+</ul>
+</div><!----><!----><div class="card-body border-bottom"><!--?lit$139807793$--><h2>Splitting Text in Excel</h2>
+<p><a href="https://youtu.be/fQeADnqiOAg" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi_webp/fQeADnqiOAg/sddefault.webp" alt="Convert text-to-columns in Excel" class="img-fluid"></a></p>
+<p>You'll learn how to transform a single-column data set into multiple, organized columns based on specific delimiters using the "Text to Columns" feature.</p>
+<p>Here are links used in the video:</p>
+<ul>
+<li><a href="https://www.senate.gov/legislative/votes_new.htm" target="_blank" rel="noopener noreferrer">US Senate Legislation - Votes</a></li>
+</ul>
+</div><!----><!----><div class="card-body border-bottom"><!--?lit$139807793$--><h2>Data Aggregation in Excel</h2>
+<p><a href="https://youtu.be/NkpT0dDU8Y4" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi_webp/NkpT0dDU8Y4/sddefault.webp" alt="Data aggregation in Excel" class="img-fluid"></a></p>
+<p>You'll learn data aggregation and visualization techniques in Excel, covering:</p>
+<ul>
+<li><strong>Data Cleanup</strong>: Remove empty columns and rows with missing values.</li>
+<li><strong>Creating Excel Tables</strong>: Convert raw data into tables for easier manipulation and formula application.</li>
+<li><strong>Date Manipulation</strong>: Extract week, month, and year from date columns using Excel functions (WEEKNUM, TEXT).</li>
+<li><strong>Color Scales</strong>: Apply color scales to visualize clusters and trends in data over time.</li>
+<li><strong>Pivot Tables</strong>: Create pivot tables to aggregate data by location and date, summarizing values weekly and monthly.</li>
+<li><strong>Sparklines</strong>: Use sparklines to visualize trends within pivot tables, making data patterns more apparent.</li>
+<li><strong>Data Bars</strong>: Implement data bars for graphical illustrations of numerical columns, showing trends and waves.</li>
+</ul>
+<p>Here are links used in the video:</p>
+<ul>
+<li><a href="https://docs.google.com/spreadsheets/d/14HLgSmME95q--6lcBv9pUstqHL183wTd/view" target="_blank" rel="noopener noreferrer">COVID-19 data Excel file - raw data</a></li>
+</ul>
+</div><!---->
+            <div class="card-body"><!--?lit$139807793$-->
+    <h2 id="improving-sales-data-accuracy-for-retailwise-inc-">Improving Sales Data Accuracy for RetailWise Inc.</h2>
+    <p>
+      <strong>RetailWise Inc.</strong> is a retail analytics firm that supports companies in optimizing their pricing,
+      margins, and inventory decisions. Their reports depend on accurate historical sales data, but legacy data sources
+      are often messy. Recently, RetailWise received an Excel sheet containing 1,000 transaction records that were
+      generated from scanned receipts. Due to OCR inconsistencies and legacy formatting issues, the data in the Excel
+      sheet is not clean.
+    </p>
+    <p>The Excel file has these columns, and they are messy:</p>
+    <ul>
+      <li><strong>Customer Name</strong>: Contains leading/trailing spaces.</li>
+      <li>
+        <strong>Country</strong>: Uses inconsistent representations. Instead of 2-letter abbreviations, it also contains
+        other values like "USA" vs. "US", "UK" vs. "U.K", "Fra" for
+        France, "Bra" for Brazil, "Ind" for India.
+      </li>
+      <li><strong>Date</strong>: Uses mixed formats like "MM-DD-YYYY", "YYYY/MM/DD", etc.</li>
+      <li>
+        <strong>Product</strong>: Includes a product name followed by a slash and a random code (e.g.,
+        "Theta/5x01vd"). Only the product name part (before the slash) is relevant.
+      </li>
+      <li>
+        <strong>Sales and Cost</strong>: Contain extra spaces and the currency string ("USD"). In some rows,
+        the Cost field is missing. When the cost is missing, it should be treated as 50% of the Sales value.
+      </li>
+      <li>
+        <strong>TransactionID</strong>: Though formatted as four-digit numbers, this field may have inconsistent
+        spacing.
+      </li>
+    </ul>
+    <h3 id="-your-task-"><strong>Your Task</strong></h3>
+    <p>
+      You need to clean this Excel data and calculate the total margin for all transactions that satisfy the following
+      criteria:
+    </p>
+    <ul>
+      <li>
+        <strong>Time Filter:</strong> Sales that occurred up to and including a specified date
+        (<strong><!--?lit$139807793$-->Fri Aug 12 2022 07:56:45 GMT+0530 (India Standard Time)</strong>).
+      </li>
+      <li>
+        <strong>Product Filter:</strong> Transactions for a specific product (<strong><!--?lit$139807793$-->Kappa</strong>). (Use only
+        the product name before the slash.)
+      </li>
+      <li>
+        <strong>Country Filter:</strong> Transactions from a specific country (<strong><!--?lit$139807793$-->IN</strong>), after
+        standardizing the country names.
+      </li>
+    </ul>
+    <p>The <strong>total margin</strong> is defined as:</p>
+    <p>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <semantics>
+          <mrow>
+            <mtext>Total&nbsp;Margin</mtext>
+            <mo>=</mo>
+            <mfrac>
+              <mrow>
+                <mtext>Total&nbsp;Sales</mtext>
+                <mo>−</mo>
+                <mtext>Total&nbsp;Cost</mtext>
+              </mrow>
+              <mtext>Total&nbsp;Sales</mtext>
+            </mfrac>
+          </mrow>
+          <annotation encoding="application/x-tex">
+            ext{Total Margin} = rac{ ext{Total Sales} - ext{Total Cost}}{ ext{Total Sales}}
+          </annotation>
+        </semantics>
+      </math>
+    </p>
+    <p>Your solution should address the following challenges:</p>
+    <ol>
+      <li>
+        <strong>Trim and Normalize Strings:</strong> Remove extra spaces from the <strong>Customer Name</strong> and
+        <strong>Country</strong> fields. Map inconsistent country names (e.g., "USA", "U.S.A",
+        "US") to a standardized format.
+      </li>
+      <li>
+        <strong>Standardize Date Formats:</strong> Detect and convert dates from "MM-DD-YYYY" and
+        "YYYY/MM/DD" into a consistent date format (e.g., ISO 8601).
+      </li>
+      <li>
+        <strong>Extract the Product Name:</strong> From the <strong>Product</strong> field, extract the portion before
+        the slash (e.g., extract "Theta" from "Theta/5x01vd").
+      </li>
+      <li>
+        <strong>Clean and Convert Sales and Cost:</strong> Remove the "USD" text and extra spaces from the
+        <strong>Sales</strong> and <strong>Cost</strong> fields. Convert these fields to numerical values. Handle
+        missing Cost values appropriately (50% of Sales).
+      </li>
+      <li>
+        <strong>Filter the Data:</strong> Include only transactions up to and including <strong><!--?lit$139807793$-->Fri Aug 12 2022 07:56:45 GMT+0530 (India Standard Time)</strong>,
+        matching product <strong><!--?lit$139807793$-->Kappa</strong>, and country <strong><!--?lit$139807793$-->IN</strong>.
+      </li>
+      <li>
+        <strong>Calculate the Margin:</strong> Sum the Sales and Cost for the filtered transactions. Compute the overall
+        margin using the formula provided.
+      </li>
+    </ol>
+    <p>By cleaning the data and calculating accurate margins, RetailWise Inc. can:</p>
+    <ul>
+      <li>
+        <strong>Improve Decision Making:</strong> Provide clients with reliable margin analyses to optimize pricing and
+        inventory.
+      </li>
+      <li>
+        <strong>Enhance Reporting:</strong> Ensure historical data is consistent and accurate, boosting stakeholder
+        confidence.
+      </li>
+      <li>
+        <strong>Streamline Operations:</strong> Reduce the manual effort needed to clean data from legacy sources.
+      </li>
+    </ul>
+
+    <div class="mb-3">
+      <p>
+        Download the Sales Excel file:
+        <button class="btn btn-sm btn-outline-primary" type="button">
+          <!--?lit$139807793$-->q-clean-up-excel-sales-data.xlsx
+        </button>
+      </p>
+      <label class="form-label" for="q-clean-up-excel-sales-data">
+        What is the total margin for transactions before <strong><!--?lit$139807793$-->Fri Aug 12 2022 07:56:45 GMT+0530 (India Standard Time)</strong> for <strong><!--?lit$139807793$-->Kappa</strong> sold
+        in <strong><!--?lit$139807793$-->IN</strong> (which may be spelt in different ways)?
+      </label>
+      <input class="form-control" required="" id="q-clean-up-excel-sales-data" name="q-clean-up-excel-sales-data" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+      <p class="text-muted">You can enter the margin as a percentage (e.g. 12.34%) or a decimal (e.g. 0.1234).</p>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-clean-up-excel-sales-data" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-clean-up-student-marks" id="hq-clean-up-student-marks">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$139807793$-->2</span>
+              <!--?lit$139807793$-->Clean up student marks (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)
+            </div>
+            <!--?lit$139807793$--><!----><div class="card-body border-bottom"><!--?lit$139807793$--><h2>Data Preparation in the Editor</h2>
+<p><a href="https://youtu.be/99lYu43L9uM" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi_webp/99lYu43L9uM/sddefault.webp" alt="Data preparation in the editor" class="img-fluid"></a></p>
+<p>You'll learn how to use a text editor <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> to process and clean data, covering:</p>
+<ul>
+<li><strong>Format</strong> JSON files</li>
+<li><strong>Find all</strong> and multiple cursors to extract specific fields</li>
+<li><strong>Sort</strong> lines</li>
+<li><strong>Delete duplicate</strong> lines</li>
+<li><strong>Replace</strong> text with multiple cursors</li>
+</ul>
+<p>Here are the links used in the video:</p>
+<ul>
+<li><a href="https://drive.google.com/file/d/1VEnKChf4i04iKsQfw0MwoJlfkOBGQ65B/view?usp=drive_link" target="_blank" rel="noopener noreferrer">City-wise product sales JSON</a></li>
+</ul>
+</div><!---->
+            <div class="card-body"><!--?lit$139807793$-->
+    <div class="mb-3">
+      <h2 id="streamlining-student-records-for-edutrack">Streamlining Student Records for EduTrack</h2>
+      <p>
+        <strong>EduTrack Systems</strong> is a leading provider of educational management software that helps schools
+        and universities maintain accurate and up-to-date student records. EduTrack's platform is used by
+        administrators to monitor academic performance, manage enrollment, and generate reports for compliance and
+        strategic planning.
+      </p>
+      <p>
+        In many educational institutions, student data is collected from multiple sources—such as handwritten forms,
+        scanned documents, and digital submissions—which can lead to duplicate records. These duplicates cause
+        inefficiencies in reporting and can lead to incorrect decision-making when it comes to resource allocation,
+        student support, and performance analysis.
+      </p>
+      <p>
+        Recently, EduTrack received a text file containing student exam results that were processed through Optical
+        Character Recognition (OCR) from legacy documents. The file is formatted with lines structured as follows:
+      </p>
+      <p>NAME STUDENT ID Marks MARKS</p>
+      <pre><code data-highlighted="yes" class="hljs language-apache"> <span class="hljs-attribute">Alice</span>  - A293:Marks <span class="hljs-number">32</span>
+
+<span class="hljs-attribute">Bob</span> - BD29DMarks <span class="hljs-number">53</span>
+
+<span class="hljs-attribute">Charlie</span> - XF28:Marks40
+</code></pre>
+      <p>
+        The data spans multiple subjects and time periods. The file will contain duplicate entries for the same student
+        (identified by the second field), and it is crucial to count only unique students for accurate reporting.
+      </p>
+      <h2 id="your-task">Your Task</h2>
+      <p>
+        As a data analyst at EduTrack Systems, your task is to process this text file and determine the number of unique
+        students based on their student IDs. This deduplication is essential to:
+      </p>
+      <ul>
+        <li>
+          <strong>Ensure Accurate Reporting:</strong> Avoid inflated counts in enrollment and performance reports.
+        </li>
+        <li>
+          <strong>Improve Data Quality:</strong> Clean the dataset for further analytics, such as tracking academic
+          progress or resource allocation.
+        </li>
+        <li>
+          <strong>Optimize Administrative Processes:</strong> Provide administrators with reliable data to support
+          decision-making.
+        </li>
+      </ul>
+      <p>You need to do the following:</p>
+      <ol>
+        <li>
+          <strong>Data Extraction:</strong> Read the text file line by line. Parse each line to extract the student ID.
+        </li>
+        <li><strong>Deduplication:</strong> Remove duplicates from the student ID list.</li>
+        <li><strong>Reporting:</strong> Count the number of unique student IDs present in the file.</li>
+      </ol>
+      <p>By accurately identifying the number of unique students, EduTrack Systems will:</p>
+      <ul>
+        <li>
+          <strong>Enhance Data Integrity:</strong> Ensure that subsequent analyses and reports reflect the true number
+          of individual students.
+        </li>
+        <li>
+          <strong>Reduce Administrative Errors:</strong> Minimize the risk of misinformed decisions that can arise from
+          duplicate entries.
+        </li>
+        <li>
+          <strong>Streamline Resource Allocation:</strong> Provide accurate student counts for budgeting, staffing, and
+          planning academic programs.
+        </li>
+        <li>
+          <strong>Improve Compliance Reporting:</strong> Ensure adherence to regulatory requirements by maintaining
+          precise student records.
+        </li>
+      </ul>
+
+      <p>
+        Download the text file with student marks
+        <button class="btn btn-sm btn-outline-primary" type="button">
+          <!--?lit$139807793$-->q-clean-up-student-marks.txt
+        </button>
+      </p>
+
+      <label class="form-label" for="q-clean-up-student-marks"> How many unique students are there in the file? </label>
+      <input class="form-control" type="number" required="" id="q-clean-up-student-marks" name="q-clean-up-student-marks" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-clean-up-student-marks" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-apache-log-requests" id="hq-apache-log-requests">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$139807793$-->3</span>
+              <!--?lit$139807793$-->Apache log requests (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)
+            </div>
+            <!--?lit$139807793$--><!----><div class="card-body border-bottom"><!--?lit$139807793$--><h2>Data Preparation in the Shell</h2>
+<p><a href="https://youtu.be/XEdy4WK70vU" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi_webp/XEdy4WK70vU/sddefault.webp" alt="Data preparation in the shell" class="img-fluid"></a></p>
+<p>You'll learn how to use UNIX tools to process and clean data, covering:</p>
+<ul>
+<li><code>curl</code> (or <code>wget</code>) to fetch data from websites.</li>
+<li><code>gzip</code> (or <code>xz</code>) to compress and decompress files.</li>
+<li><code>wc</code> to count lines, words, and characters in text.</li>
+<li><code>head</code> and <code>tail</code> to get the start and end of files.</li>
+<li><code>cut</code> to extract specific columns from text.</li>
+<li><code>uniq</code> to de-duplicate lines.</li>
+<li><code>sort</code> to sort lines.</li>
+<li><code>grep</code> to filter lines containing specific text.</li>
+<li><code>sed</code> to search and replace text.</li>
+<li><code>awk</code> for more complex text processing.</li>
+</ul>
+<p>Here are the links used in the video:</p>
+<ul>
+<li><a href="https://colab.research.google.com/drive/1KSFkQDK0v__XWaAaHKeQuIAwYV0dkTe8" target="_blank" rel="noopener noreferrer">Data preparation in the shell - Notebook</a></li>
+<li><a href="https://jeroenjanssens.com/dsatcl/" target="_blank" rel="noopener noreferrer">Data Science at the Command Line</a></li>
+</ul>
+</div><!---->
+            <div class="card-body"><!--?lit$139807793$-->
+    <div class="mb-3">
+      <h2 id="peak-usage-analysis-for-regional-content">Peak Usage Analysis for Regional Content</h2>
+      <p>
+        <strong>s-anand.net</strong> is a personal website that had region-specific music content. One of the site's
+        key sections is <strong><!--?lit$139807793$-->tamil</strong>, which hosts music files and is especially popular among the local
+        audience. The website is powered by robust Apache web servers that record detailed access logs. These logs are
+        essential for understanding user behavior, server load, and content engagement.
+      </p>
+      <p>
+        The author noticed unusual traffic patterns during weekend evenings. To better tailor their content and optimize
+        server resources, they need to know precisely how many successful requests are made to the
+        <strong><!--?lit$139807793$-->tamil</strong> section during peak hours on <!--?lit$139807793$-->Thursday. Specifically, they are interested in:
+      </p>
+      <ul>
+        <li>
+          <strong>Time Window:</strong> From <strong><!--?lit$139807793$-->7</strong> until before <strong><!--?lit$139807793$-->9</strong>.
+        </li>
+        <li><strong>Request Type:</strong> Only <strong>GET</strong> requests.</li>
+        <li>
+          <strong>Success Criteria:</strong> Requests that return HTTP status codes between
+          <strong>200 and 299</strong>.
+        </li>
+        <li>
+          <strong>Data Source:</strong> The logs for May 2024 stored in a GZipped Apache log file containing 258,074
+          rows.
+        </li>
+      </ul>
+      <p>The challenge is further complicated by the nature of the log file:</p>
+      <ul>
+        <li>The logs are recorded in the GMT-0500 timezone.</li>
+        <li>
+          The file format is non-standard in that fields are separated by spaces, with most fields quoted by double
+          quotes, except the <strong>Time</strong> field.
+        </li>
+        <li>Some lines have minor formatting issues (41 rows have unique quoting due to how quotes are escaped).</li>
+      </ul>
+      <h3 id="your-task">Your Task</h3>
+      <p>
+        As a data analyst, you are tasked with determining how many <strong>successful GET requests</strong> for pages
+        under <strong><!--?lit$139807793$-->tamil</strong> were made on <!--?lit$139807793$-->Thursday between <strong><!--?lit$139807793$-->7</strong> and
+        <strong><!--?lit$139807793$-->9</strong> during May 2024. This metric will help:
+      </p>
+      <ul>
+        <li>
+          <strong>Scale Resources:</strong> Ensure that servers can handle the peak load during these critical hours.
+        </li>
+        <li>
+          <strong>Content Planning:</strong> Determine the popularity of regional content to decide on future content
+          investments.
+        </li>
+        <li><strong>Marketing Insights:</strong> Tailor promotional strategies for peak usage times.</li>
+      </ul>
+      <p>
+        This
+        <a href="https://drive.google.com/file/d/1xLx-odohCtdPYbpOTui23upsCSzMBlpN/view">GZipped Apache log file</a>
+        (61MB) has 258,074 rows. Each row is an Apache web log entry for the site
+        <a href="https://s-anand.net/">s-anand.net</a> in May 2024.
+      </p>
+      <p>Each row has these fields:</p>
+      <ul>
+        <li><strong>IP</strong>: The IP address of the visitor</li>
+        <li><strong>Remote logname</strong>: The remote logname of the visitor. Typically "-"</li>
+        <li><strong>Remote user</strong>: The remote user of the visitor. Typically "-"</li>
+        <li>
+          <strong>Time</strong>: The time of the visit. E.g. <strong>[01/May/2024:00:00:00 +0000]</strong>. Not that
+          <strong>this is not quoted</strong> and you need to handle this.
+        </li>
+        <li>
+          <strong>Request</strong>: The request made by the visitor. E.g. <strong>GET /blog/ HTTP/1.1</strong>. It has 3
+          space-separated parts, namely (a) <strong>Method</strong>: The HTTP method. E.g. <strong>GET</strong> (b)
+          <strong>URL</strong>: The URL visited. E.g. <strong>/blog/</strong> (c) <strong>Protocol</strong>: The HTTP
+          protocol. E.g. <strong>HTTP/1.1</strong>
+        </li>
+        <li>
+          <strong>Status</strong>: The HTTP status code. If <strong>200 &lt;= Status &lt; 300</strong> it is a
+          successful request
+        </li>
+        <li><strong>Size</strong>: The size of the response in bytes. E.g. <strong>1234</strong></li>
+        <li>
+          <strong>Referer</strong>: The referer URL. E.g.
+          <strong><a href="https://s-anand.net/">https://s-anand.net/</a></strong>
+        </li>
+        <li><strong>User agent</strong>: The browser used. This will contain spaces and might have escaped quotes.</li>
+        <li><strong>Vhost</strong>: The virtual host. E.g. <strong>s-anand.net</strong></li>
+        <li><strong>Server</strong>: The IP address of the server.</li>
+      </ul>
+      <p>
+        The fields are separated by spaces and quoted by double quotes (<strong>"</strong>). Unlike CSV files,
+        quoted fields are escaped via <strong>\"</strong> and not <strong>""</strong>. (This impacts 41
+        rows.)
+      </p>
+      <p>All data is in the GMT-0500 timezone and the questions are based in this same timezone.</p>
+      <p>By determining the number of successful GET requests under the defined conditions, we'll be able to:</p>
+      <ul>
+        <li>
+          <strong>Optimize Infrastructure:</strong> Scale server resources effectively during peak traffic times,
+          reducing downtime and improving user experience.
+        </li>
+        <li>
+          <strong>Strategize Content Delivery:</strong> Identify popular content segments and adjust digital content
+          strategies to better serve the audience.
+        </li>
+        <li>
+          <strong>Improve Marketing Efforts:</strong> Focus marketing initiatives on peak usage windows to maximize
+          engagement and conversion.
+        </li>
+      </ul>
+
+      <label class="form-label" for="q-apache-log-requests">
+        What is the number of successful GET requests for pages under <strong>/<!--?lit$139807793$-->tamil/</strong> from
+        <strong><!--?lit$139807793$-->7:00</strong> until before <strong><!--?lit$139807793$-->9:00</strong> on <!--?lit$139807793$-->Thursdays?
+      </label>
+      <input class="form-control" type="number" required="" id="q-apache-log-requests" name="q-apache-log-requests" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-apache-log-requests" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-apache-log-downloads" id="hq-apache-log-downloads">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$139807793$-->4</span>
+              <!--?lit$139807793$-->Apache log downloads (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)
+            </div>
+            <!--?lit$139807793$-->
+            <div class="card-body"><!--?lit$139807793$-->
+    <div class="mb-3">
+      <h2 id="peak-usage-analysis-for-regional-content">Bandwidth Analysis for Regional Content</h2>
+      <p>
+        <strong>s-anand.net</strong> is a personal website that had region-specific music content. One of the site's
+        key sections is <strong><!--?lit$139807793$-->telugu</strong>, which hosts music files and is especially popular among the local
+        audience. The website is powered by robust Apache web servers that record detailed access logs. These logs are
+        essential for understanding user behavior, server load, and content engagement.
+      </p>
+      <p>
+        By analyzing the server’s Apache log file, the author can identify heavy users and take measures to manage
+        bandwidth, improve site performance, or even investigate potential abuse.
+      </p>
+      <h3 id="your-task">Your Task</h3>
+      <p>
+        This
+        <a href="https://drive.google.com/file/d/1xLx-odohCtdPYbpOTui23upsCSzMBlpN/view">GZipped Apache log file</a>
+        (61MB) has 258,074 rows. Each row is an Apache web log entry for the site
+        <a href="https://s-anand.net/">s-anand.net</a> in May 2024.
+      </p>
+      <p>Each row has these fields:</p>
+      <ul>
+        <li><strong>IP</strong>: The IP address of the visitor</li>
+        <li><strong>Remote logname</strong>: The remote logname of the visitor. Typically "-"</li>
+        <li><strong>Remote user</strong>: The remote user of the visitor. Typically "-"</li>
+        <li>
+          <strong>Time</strong>: The time of the visit. E.g. <strong>[01/May/2024:00:00:00 +0000]</strong>. Not that
+          <strong>this is not quoted</strong> and you need to handle this.
+        </li>
+        <li>
+          <strong>Request</strong>: The request made by the visitor. E.g. <strong>GET /blog/ HTTP/1.1</strong>. It has 3
+          space-separated parts, namely (a) <strong>Method</strong>: The HTTP method. E.g. <strong>GET</strong> (b)
+          <strong>URL</strong>: The URL visited. E.g. <strong>/blog/</strong> (c) <strong>Protocol</strong>: The HTTP
+          protocol. E.g. <strong>HTTP/1.1</strong>
+        </li>
+        <li>
+          <strong>Status</strong>: The HTTP status code. If <strong>200 &lt;= Status &lt; 300</strong> it is a
+          successful request
+        </li>
+        <li><strong>Size</strong>: The size of the response in bytes. E.g. <strong>1234</strong></li>
+        <li>
+          <strong>Referer</strong>: The referer URL. E.g.
+          <strong><a href="https://s-anand.net/">https://s-anand.net/</a></strong>
+        </li>
+        <li><strong>User agent</strong>: The browser used. This will contain spaces and might have escaped quotes.</li>
+        <li><strong>Vhost</strong>: The virtual host. E.g. <strong>s-anand.net</strong></li>
+        <li><strong>Server</strong>: The IP address of the server.</li>
+      </ul>
+      <p>
+        The fields are separated by spaces and quoted by double quotes (<strong>"</strong>). Unlike CSV files,
+        quoted fields are escaped via <strong>\"</strong> and not <strong>""</strong>. (This impacts 41
+        rows.)
+      </p>
+      <p>All data is in the GMT-0500 timezone and the questions are based in this same timezone.</p>
+      <ol>
+        <li>
+          <strong>Filter the Log Entries:</strong> Extract only the requests where the URL starts with
+          <strong>/<!--?lit$139807793$-->telugu/</strong>. Include only those requests made on the specified <strong><!--?lit$139807793$-->2024-05-16</strong>.
+        </li>
+        <li>
+          <strong>Aggregate Data by IP:</strong> Sum the "Size" field for each unique IP address from the
+          filtered entries.
+        </li>
+        <li>
+          <strong>Identify the Top Data Consumer:</strong> Determine the IP address that has the highest total
+          downloaded bytes. Reports the total number of bytes that this IP address downloaded.
+        </li>
+      </ol>
+
+      <label class="form-label" for="q-apache-log-downloads">
+        Across all requests under <code><!--?lit$139807793$-->telugu/</code> on <code><!--?lit$139807793$-->2024-05-16</code>, how many bytes did the top IP address
+        (by volume of downloads) download?
+      </label>
+      <input class="form-control" type="number" required="" id="q-apache-log-downloads" name="q-apache-log-downloads" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-apache-log-downloads" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-clean-up-sales-data" id="hq-clean-up-sales-data">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$139807793$-->5</span>
+              <!--?lit$139807793$-->Clean up sales data (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)
+            </div>
+            <!--?lit$139807793$--><!----><div class="card-body border-bottom"><!--?lit$139807793$--><h2>Cleaning Data with OpenRefine</h2>
+<p><a href="https://youtu.be/zxEtfHseE84" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi_webp/zxEtfHseE84/sddefault.webp" alt="Cleaning data with OpenRefine" class="img-fluid"></a></p>
+<p>This session covers the use of OpenRefine for data cleaning, focusing on resolving entity discrepancies:</p>
+<ul>
+<li><strong>Data Upload and Project Creation</strong>: Import data into OpenRefine and create a new project for analysis.</li>
+<li><strong>Faceting Data</strong>: Use text facets to group similar entries and identify frequency of address crumbs.</li>
+<li><strong>Clustering Methodology</strong>: Apply clustering algorithms to merge similar entries with minor differences, such as punctuation.</li>
+<li><strong>Manual and Automated Clustering</strong>: Learn to merge clusters manually or in one go, trusting the system's clustering accuracy.</li>
+<li><strong>Entity Resolution</strong>: Clean and save the data by resolving multiple versions of the same entity using Open Refine.</li>
+</ul>
+<p>Here are links used in the video:</p>
+<ul>
+<li><a href="https://openrefine.org/" target="_blank" rel="noopener noreferrer">OpenRefine software</a></li>
+<li><a href="https://drive.google.com/file/d/1ccu0Xxk8UJUa2Dz4lihmvzhLjvPy42Ai/view" target="_blank" rel="noopener noreferrer">Dataset for OpenRefine</a></li>
+</ul>
+</div><!---->
+            <div class="card-body"><!--?lit$139807793$-->
+    <div class="mb-3">
+      <h2>Sales Analytics at GlobalRetail Insights</h2>
+      <p>
+        <strong>GlobalRetail Insights</strong> is a market research and analytics firm specializing in providing
+        data-driven insights for multinational retail companies. Their clients rely on accurate, detailed sales reports
+        to make strategic decisions regarding product placement, inventory management, and marketing campaigns. However,
+        the quality of these insights depends on the reliability of the underlying sales data.
+      </p>
+      <p>
+        One major challenge GlobalRetail faces is the inconsistent recording of city names in sales data. Due to human
+        error and regional differences, city names can be mis-spelt (e.g., "Tokio" instead of
+        "Tokyo"). This inconsistency complicates the process of aggregating sales data by city, which is
+        crucial for identifying regional trends and opportunities.
+      </p>
+      <p>
+        GlobalRetail Insights recently received a dataset named
+        <button class="btn btn-sm btn-outline-primary" type="button">
+          <!--?lit$139807793$-->q-clean-up-sales-data.json
+        </button>
+        from one of its large retail clients. The dataset consists of 2,500 sales entries, each containing the following
+        fields:
+      </p>
+      <ul>
+        <li>
+          <strong>city</strong>: The city where the sale was made. Note that city names may be mis-spelt phonetically
+          (e.g., "Tokio" instead of "Tokyo").
+        </li>
+        <li><strong>product</strong>: The product sold. This field is consistently spelled.</li>
+        <li><strong>sales</strong>: The number of units sold.</li>
+      </ul>
+      <p>
+        The client's goal is to evaluate the performance of a specific product across various regions. However, due
+        to the mis-spelled city names, directly aggregating sales by city would lead to fragmented and misleading
+        insights.
+      </p>
+      <h2>Your Task</h2>
+      <p>
+        As a data analyst at GlobalRetail Insights, you are tasked with extracting meaningful insights from this
+        dataset. Specifically, you need to:
+      </p>
+      <ol>
+        <li>
+          <strong>Group Mis-spelt City Names:</strong> Use phonetic clustering algorithms to group together entries that
+          refer to the same city despite variations in spelling. For instance, cluster "Tokyo" and
+          "Tokio" as one.
+        </li>
+        <li>
+          <strong>Filter Sales Entries:</strong> Select all entries where:
+          <ul>
+            <li>The product sold is <strong><!--?lit$139807793$-->Gloves</strong>.</li>
+            <li>The number of units sold is at least <strong><!--?lit$139807793$-->162</strong>.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Aggregate Sales by City:</strong> After clustering city names, group the filtered sales entries by
+          city and calculate the total units sold for each city.
+        </li>
+      </ol>
+      <p>By performing this analysis, GlobalRetail Insights will be able to:</p>
+      <ul>
+        <li>
+          <strong>Improve Data Accuracy:</strong> Correct mis-spellings and inconsistencies in the dataset, leading to
+          more reliable insights.
+        </li>
+        <li>
+          <strong>Target Marketing Efforts:</strong> Identify high-performing regions for the specific product, enabling
+          targeted promotional strategies.
+        </li>
+        <li>
+          <strong>Optimize Inventory Management:</strong> Ensure that inventory allocations reflect the true demand in
+          each region, reducing wastage and stockouts.
+        </li>
+        <li>
+          <strong>Drive Strategic Decision-Making:</strong> Provide actionable intelligence to clients that supports
+          strategic planning and competitive advantage in the market.
+        </li>
+      </ul>
+
+      <label class="form-label" for="q-clean-up-sales-data">
+        How many units of <!--?lit$139807793$-->Gloves were sold in <!--?lit$139807793$-->Chennai on transactions with at least <!--?lit$139807793$-->162 units?
+      </label>
+      <input class="form-control" type="number" required="" id="q-clean-up-sales-data" name="q-clean-up-sales-data" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-clean-up-sales-data" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-parse-partial-json" id="hq-parse-partial-json">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$139807793$-->6</span>
+              <!--?lit$139807793$-->Parse partial JSON (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)
+            </div>
+            <!--?lit$139807793$--><!----><div class="card-body border-bottom"><!--?lit$139807793$--><h2>Parsing JSON</h2>
+<p>JSON is everywhere—APIs, logs, configuration files—and its nested or large structure can challenge memory and processing. In this tutorial, we'll explore tools to flatten, stream, and query JSON data efficiently.</p>
+<p>For example, we'll often need to process a multi-gigabyte log file from a web service where each record is a JSON object.</p>
+<p><a href="https://youtu.be/1lxrb_ezP-g" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/1lxrb_ezP-g/sddefault.jpg" alt="JSON Parsing in Python" class="img-fluid"></a></p>
+<p>This requires us to handle complex nested structures, large files that don't fit in memory, or extract specific fields. Here are the key tools and techniques for efficient JSON parsing:</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Extract from JSON...</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#command-line-json-processing-with-jq" target="_blank" rel="noopener noreferrer">jq</a></td>
+<td>JSON in the shell</td>
+<td>Quick data exploration and pipeline processing</td>
+</tr>
+<tr>
+<td><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#jmespath-queries" target="_blank" rel="noopener noreferrer">JMESPath</a></td>
+<td>JSON in Python</td>
+<td>Handle complex queries with a clean syntax</td>
+</tr>
+<tr>
+<td><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#streaming-with-ijson" target="_blank" rel="noopener noreferrer">ijson</a></td>
+<td>JSON streams in Python</td>
+<td>Parse streaming/large JSON files memory-efficiently</td>
+</tr>
+<tr>
+<td><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#pandas-json-columns" target="_blank" rel="noopener noreferrer">Pandas</a></td>
+<td>JSON columns in Python</td>
+<td>Fast analysis of structured data</td>
+</tr>
+<tr>
+<td><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#sql-json-functions" target="_blank" rel="noopener noreferrer">SQL JSON</a></td>
+<td>JSON in databases</td>
+<td>Combine structured and semi-structured data</td>
+</tr>
+<tr>
+<td><a href="https://exam.sanand.workers.dev/tds-2025-01-ga5#duckdb-json-processing" target="_blank" rel="noopener noreferrer">DuckDB</a></td>
+<td>JSON anywhere</td>
+<td>Fast analysis of JSON files / databases without loading to memory</td>
+</tr>
+</tbody></table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Use Pandas when you need to transform API responses into a DataFrame for further analysis.</li>
+<li>Leverage ijson when dealing with huge JSON logs where memory is at a premium.</li>
+<li>Apply jq for quick, iterative exploration directly in your terminal.</li>
+</ul>
+<p>Practice with these resources:</p>
+<ul>
+<li><a href="https://jsonpath.com/" target="_blank" rel="noopener noreferrer">JSONPath Online Evaluator</a>: Test JSON queries</li>
+<li><a href="https://jqplay.org/" target="_blank" rel="noopener noreferrer">jq play</a>: Interactive jq query testing</li>
+<li><a href="https://duckdb.org/docs/data/json" target="_blank" rel="noopener noreferrer">DuckDB JSON Tutorial</a>: Learn DuckDB JSON functions</li>
+</ul>
+<h3>Command-line JSON Processing with jq</h3>
+<p><a href="https://jqlang.org/" target="_blank" rel="noopener noreferrer">jq</a> is a versatile command-line tool for slicing, filtering, and transforming JSON. It excels in quick data exploration and can be integrated into shell scripts for automated data pipelines.</p>
+<p><strong>Example:</strong> Sifting through server logs in JSON Lines format to extract error messages or aggregate metrics without launching a full-scale ETL process.</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Extract specific fields from JSONL</span>
+<span class="hljs-built_in">cat</span> data.jsonl | jq -c <span class="hljs-string">'select(.type == "user") | {id, name}'</span>
+
+<span class="hljs-comment"># Transform JSON structure</span>
+<span class="hljs-built_in">cat</span> data.json | jq <span class="hljs-string">'.items[] | {name: .name, count: .details.count}'</span>
+
+<span class="hljs-comment"># Filter and aggregate</span>
+<span class="hljs-built_in">cat</span> events.jsonl | jq -s <span class="hljs-string">'group_by(.category) | map({category: .[0].category, count: length})'</span>
+</code></pre>
+<h3>JMESPath Queries</h3>
+<p><a href="https://jmespath.org/" target="_blank" rel="noopener noreferrer">JMESPath</a> offers a declarative query language to extract and transform data from nested JSON structures without needing verbose code. It's a neat alternative when you want to quickly pull out specific values or filter collections based on conditions.</p>
+<p><strong>Example:</strong> Extracting user emails or filtering out inactive records from a complex JSON payload received from a cloud service.</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">import</span> jmespath
+
+<span class="hljs-comment"># Example queries</span>
+data = {
+    <span class="hljs-string">"locations"</span>: [
+        {<span class="hljs-string">"name"</span>: <span class="hljs-string">"Seattle"</span>, <span class="hljs-string">"state"</span>: <span class="hljs-string">"WA"</span>, <span class="hljs-string">"info"</span>: {<span class="hljs-string">"population"</span>: <span class="hljs-number">737015</span>}},
+        {<span class="hljs-string">"name"</span>: <span class="hljs-string">"Portland"</span>, <span class="hljs-string">"state"</span>: <span class="hljs-string">"OR"</span>, <span class="hljs-string">"info"</span>: {<span class="hljs-string">"population"</span>: <span class="hljs-number">652503</span>}}
+    ]
+}
+
+<span class="hljs-comment"># Find all cities with population &gt; 700000</span>
+cities = jmespath.search(<span class="hljs-string">"locations[?info.population &gt; `700000`].name"</span>, data)
+</code></pre>
+<h3>Streaming with ijson</h3>
+<p>Loading huge JSON files all at once can quickly exhaust system memory. <a href="https://ijson.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">ijson</a> lets you stream and process JSON incrementally. This method is ideal when your JSON file is too large or when you only need to work with part of the data.</p>
+<p><strong>Example:</strong> Processing a continuous feed from an API that returns a large JSON array, such as sensor data or event logs, while filtering on the fly.</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">import</span> ijson
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">process_large_json</span>(<span class="hljs-params">filepath: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">list</span>:
+    <span class="hljs-string">"""Process a large JSON file without loading it entirely into memory."""</span>
+    results = []
+
+    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(filepath, <span class="hljs-string">'rb'</span>) <span class="hljs-keyword">as</span> file:
+        <span class="hljs-comment"># Stream objects under the 'items' key</span>
+        parser = ijson.items(file, <span class="hljs-string">'items.item'</span>)
+        <span class="hljs-keyword">async</span> <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> parser:
+            <span class="hljs-keyword">if</span> item[<span class="hljs-string">'value'</span>] &gt; <span class="hljs-number">100</span>:  <span class="hljs-comment"># Process conditionally</span>
+                results.append(item)
+
+    <span class="hljs-keyword">return</span> results
+</code></pre>
+<h3>Pandas JSON Columns</h3>
+<p><a href="https://pandas.pydata.org/" target="_blank" rel="noopener noreferrer">Pandas</a> makes it easy to work with tabular data that includes JSON strings. When you receive API data where one column holds nested JSON, flattening these structures lets you analyze and visualize the data using familiar DataFrame operations.</p>
+<p><strong>Example:</strong> Flattening customer records stored as nested JSON in a CSV file to extract demographic details and spending patterns.</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+
+<span class="hljs-comment"># Parse JSON strings in a column</span>
+df = pd.DataFrame({<span class="hljs-string">'json_col'</span>: [<span class="hljs-string">'{"name": "Alice", "age": 30}'</span>, <span class="hljs-string">'{"name": "Bob", "age": 25}'</span>]})
+df[<span class="hljs-string">'parsed'</span>] = df[<span class="hljs-string">'json_col'</span>].apply(pd.json_normalize)
+
+<span class="hljs-comment"># Normalize nested JSON columns</span>
+df = pd.read_csv(<span class="hljs-string">'data.csv'</span>)
+df_normalized = pd.json_normalize(
+    df[<span class="hljs-string">'nested_json'</span>].apply(json.loads),
+    record_path=[<span class="hljs-string">'items'</span>],        <span class="hljs-comment"># List of nested objects to unpack</span>
+    meta=[<span class="hljs-string">'id'</span>, <span class="hljs-string">'timestamp'</span>]      <span class="hljs-comment"># Keep these columns from parent</span>
+)
+</code></pre>
+<h3>SQL JSON Functions</h3>
+<p><a href="https://en.wikipedia.org/wiki/SQL:2016" target="_blank" rel="noopener noreferrer">SQL</a> supports built-in JSON functions allow you to query and manipulate JSON stored within relational databases.
+These are implemented by most popular databases, including
+<a href="https://www.sqlite.org/json1.html" target="_blank" rel="noopener noreferrer">SQLite</a>,
+<a href="https://www.postgresql.org/docs/current/functions-json.html" target="_blank" rel="noopener noreferrer">PostgreSQL</a>, and
+<a href="https://dev.mysql.com/doc/refman/8.4/en/json-function-reference.html" target="_blank" rel="noopener noreferrer">MySQL</a>.
+This is especially handy when you have a hybrid data model, combining structured tables with semi-structured JSON columns.</p>
+<p><strong>Example:</strong> An application that stores user settings or application logs as JSON in a SQLite database, enabling quick lookups and modifications without external JSON parsing libraries.</p>
+<pre><code class="language-sql hljs" data-highlighted="yes"><span class="hljs-keyword">SELECT</span>
+    json_extract(data, <span class="hljs-string">'$.name'</span>) <span class="hljs-keyword">as</span> name,
+    json_extract(data, <span class="hljs-string">'$.details.age'</span>) <span class="hljs-keyword">as</span> age
+<span class="hljs-keyword">FROM</span> users
+<span class="hljs-keyword">WHERE</span> json_extract(data, <span class="hljs-string">'$.active'</span>) <span class="hljs-operator">=</span> <span class="hljs-literal">true</span>
+</code></pre>
+<h3>DuckDB JSON Processing</h3>
+<p><a href="https://duckdb.org/" target="_blank" rel="noopener noreferrer">DuckDB</a> shines when analyzing JSON/JSONL files directly, making it a powerful tool for data analytics without the overhead of loading entire datasets into memory. Its SQL-like syntax simplifies exploratory analysis on nested data.</p>
+<p><strong>Example:</strong> Performing ad-hoc analytics on streaming JSON logs from a web service, such as calculating average response times or aggregating user behavior metrics.</p>
+<pre><code class="language-sql hljs" data-highlighted="yes"><span class="hljs-keyword">SELECT</span>
+    json_extract_string(data, <span class="hljs-string">'$.user.name'</span>) <span class="hljs-keyword">as</span> name,
+    <span class="hljs-built_in">avg</span>(json_extract_float(data, <span class="hljs-string">'$.metrics.value'</span>)) <span class="hljs-keyword">as</span> avg_value
+<span class="hljs-keyword">FROM</span> read_json_auto(<span class="hljs-string">'data/*.jsonl'</span>)
+<span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> <span class="hljs-number">1</span>
+<span class="hljs-keyword">HAVING</span> avg_value <span class="hljs-operator">&gt;</span> <span class="hljs-number">100</span>
+</code></pre>
+</div><!---->
+            <div class="card-body"><!--?lit$139807793$-->
+    <div class="mb-3">
+      <h2>
+        <strong>Case Study: Recovering Sales Data for ReceiptRevive Analytics</strong>
+      </h2>
+      <p>
+        <strong>ReceiptRevive Analytics</strong> is a data recovery and business intelligence firm specializing in
+        processing legacy sales data from paper receipts. Many of the client companies have archives of receipts from
+        past years, which have been digitized using OCR (Optical Character Recognition) techniques. However, due to the
+        condition of some receipts (e.g., torn, faded, or partially damaged), the OCR process sometimes produces
+        incomplete JSON data. These imperfections can lead to truncated fields or missing values, which complicates the
+        process of data aggregation and analysis.
+      </p>
+      <p>
+        One of ReceiptRevive’s major clients, <strong>RetailFlow Inc.</strong>, operates numerous brick-and-mortar
+        stores and has an extensive archive of old receipts. RetailFlow Inc. needs to recover total sales information
+        from a subset of these digitized receipts to analyze historical sales performance. The provided JSON data
+        contains 100 rows, with each row representing a sales entry. Each entry is expected to include four keys:
+      </p>
+      <ul>
+        <li><strong>city</strong>: The city where the sale was made.</li>
+        <li><strong>product</strong>: The product that was sold.</li>
+        <li><strong>sales</strong>: The number of units sold (or sales revenue).</li>
+        <li><strong>id</strong>: A unique identifier for the receipt.</li>
+      </ul>
+      <p>
+        Due to damage to some receipts during the digitization process, the JSON entries are truncated at the end, and
+        the <code>id</code> field is missing. Despite this, RetailFlow Inc. is primarily interested in the aggregate
+        sales value.
+      </p>
+      <h2>Your Task</h2>
+      <p>As a data recovery analyst at ReceiptRevive Analytics, your task is to develop a program that will:</p>
+      <ol>
+        <li>
+          <strong>Parse the Sales Data:</strong><br>Read the provided JSON file containing 100 rows of sales data.
+          Despite the truncated data (specifically the missing <code>id</code>), you must accurately extract the
+          <code>sales</code> figures from each row.
+        </li>
+        <li>
+          <strong>Data Validation and Cleanup:</strong><br>Ensure that the data is properly handled even if some
+          fields are incomplete. Since the <code>id</code> is missing for some entries, your focus will be solely on the
+          <code>sales</code> values.
+        </li>
+        <li>
+          <strong>Calculate Total Sales:</strong><br>Sum the <code>sales</code> values across all 100 rows to provide
+          a single aggregate figure that represents the total sales recorded.
+        </li>
+      </ol>
+      <p>
+        By successfully recovering and aggregating the sales data, ReceiptRevive Analytics will enable RetailFlow Inc.
+        to:
+      </p>
+      <ul>
+        <li>
+          <strong>Reconstruct Historical Sales Data:</strong> Gain insights into past sales performance even when
+          original receipts are damaged.
+        </li>
+        <li>
+          <strong>Inform Business Decisions:</strong> Use the recovered data to understand sales trends, adjust
+          inventory, and plan future promotions.
+        </li>
+        <li>
+          <strong>Enhance Data Recovery Processes:</strong> Improve methods for handling imperfect OCR data, reducing
+          future data loss and increasing data accuracy.
+        </li>
+        <li>
+          <strong>Build Client Trust:</strong> Demonstrate the ability to extract valuable insights from challenging
+          datasets, thereby reinforcing client confidence in ReceiptRevive's services.
+        </li>
+      </ul>
+      <p>
+        Download the data from
+        <button class="btn btn-sm btn-outline-primary" type="button">
+          <!--?lit$139807793$-->q-parse-partial-json.jsonl
+        </button>
+      </p>
+      <label class="form-label" for="q-parse-partial-json"> What is the total sales value? </label>
+      <input class="form-control" type="number" required="" id="q-parse-partial-json" name="q-parse-partial-json" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-parse-partial-json" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-extract-nested-json-keys" id="hq-extract-nested-json-keys">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$139807793$-->7</span>
+              <!--?lit$139807793$-->Extract nested JSON keys (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)
+            </div>
+            <!--?lit$139807793$-->
+            <div class="card-body"><!--?lit$139807793$-->
+    <div class="mb-3">
+      <h2 id="log-analysis-for-datasure-technologies">Log Analysis for DataSure Technologies</h2>
+      <p>
+        <strong>DataSure Technologies</strong> is a leading provider of IT infrastructure and software solutions, known
+        for its robust systems and proactive maintenance practices. As part of their service offerings, DataSure
+        collects extensive logs from thousands of servers and applications worldwide. These logs, stored in JSON format,
+        are rich with information about system performance, error events, and user interactions. However, the logs are
+        complex and deeply nested, which can make it challenging to quickly identify recurring issues or anomalous
+        behavior.
+      </p>
+      <p>
+        Recently, DataSure's operations team observed an increase in system alerts and minor anomalies reported by
+        their monitoring tools. To diagnose these issues more effectively, the team needs to perform a detailed analysis
+        of the log files. One critical step is to count how often a specific key (e.g.,
+        <code>"errorCode"</code>, <code>"criticalFlag"</code>, or any other operational parameter
+        represented by <code><!--?lit$139807793$-->MOBO</code>) appears in the log entries.
+      </p>
+      <p>Key considerations include:</p>
+      <ul>
+        <li>
+          <strong>Complex Structure:</strong> The log files are large and nested, with multiple levels of objects and
+          arrays. The target key may appear at various depths.
+        </li>
+        <li>
+          <strong>Key vs. Value:</strong> The key may also appear as a value within the logs, but only occurrences where
+          it is a key should be counted.
+        </li>
+        <li>
+          <strong>Operational Impact:</strong> Identifying the frequency of this key can help pinpoint common issues,
+          guide system improvements, and inform maintenance strategies.
+        </li>
+      </ul>
+      <h2 id="your-task">Your Task</h2>
+      <p>
+        As a data analyst at DataSure Technologies, you have been tasked with developing a script that processes a large
+        JSON log file and counts the number of times a specific key, represented by the placeholder <code><!--?lit$139807793$-->MOBO</code>,
+        appears in the JSON structure. Your solution must:
+      </p>
+      <ol>
+        <li>
+          <strong>Parse the Large, Nested JSON:</strong> Efficiently traverse the JSON structure regardless of its
+          complexity.
+        </li>
+        <li>
+          <strong>Count Key Occurrences:</strong> Increment a count only when <code><!--?lit$139807793$-->MOBO</code> is used as a key in
+          the JSON object (ignoring occurrences of <code><!--?lit$139807793$-->MOBO</code> as a value).
+        </li>
+        <li>
+          <strong>Return the Count:</strong> Output the total number of occurrences, which will be used by the
+          operations team to assess the prevalence of particular system events or errors.
+        </li>
+      </ol>
+      <p>By accurately counting the occurrences of a specific key in the log files, DataSure Technologies can:</p>
+      <ul>
+        <li>
+          <strong>Diagnose Issues:</strong> Quickly determine the frequency of error events or specific system flags
+          that may indicate recurring problems.
+        </li>
+        <li>
+          <strong>Prioritize Maintenance:</strong> Focus resources on addressing the most frequent issues as identified
+          by the key count.
+        </li>
+        <li>
+          <strong>Enhance Monitoring:</strong> Improve automated monitoring systems by correlating key occurrence data
+          with system performance metrics.
+        </li>
+        <li>
+          <strong>Inform Decision-Making:</strong> Provide data-driven insights that support strategic planning for
+          system upgrades and operational improvements.
+        </li>
+      </ul>
+
+      <p>
+        Download the data from
+        <button class="btn btn-sm btn-outline-primary" type="button">
+          <!--?lit$139807793$-->q-extract-nested-json-keys.json
+        </button>
+      </p>
+      <label class="form-label" for="q-extract-nested-json-keys"> How many times does <code><!--?lit$139807793$-->MOBO</code> appear as a key? </label>
+      <input class="form-control" type="number" required="" id="q-extract-nested-json-keys" name="q-extract-nested-json-keys" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-extract-nested-json-keys" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-duckdb-social-media-interactions" id="hq-duckdb-social-media-interactions">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$139807793$-->8</span>
+              <!--?lit$139807793$-->DuckDB: Social Media Interactions (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)
+            </div>
+            <!--?lit$139807793$-->
+            <div class="card-body"><!--?lit$139807793$-->
+    <div class="mb-3">
+      <h2>Identifying High-Impact Social Media Posts for EngageMetrics</h2>
+      <p>
+        <strong>EngageMetrics</strong> is a digital marketing analytics firm that specializes in tracking and analyzing
+        social media engagement. Their clients, ranging from major brands to local businesses, rely on data-driven
+        insights to optimize content strategy, measure campaign performance, and identify posts that drive significant
+        user interaction.
+      </p>
+      <p>
+        Social media platforms generate vast amounts of user-generated content, including posts, comments, likes, and
+        ratings. One key metric that EngageMetrics uses is the “usefulness” of comments on posts. A comment rated highly
+        on usefulness is a strong indicator that a post is engaging and valuable to its audience.
+      </p>
+      <p>
+        However, the raw data is complex and stored in a DuckDB table called <strong>social_media</strong>, which is
+        generated by a simulated dataset. Each row in the table represents a post with the following fields:
+      </p>
+      <ul>
+        <li><strong>post_id</strong>: A unique identifier for the post.</li>
+        <li><strong>username</strong>: The user who created the post.</li>
+        <li><strong>timestamp</strong>: The time when the post was made.</li>
+        <li>
+          <strong>comments</strong>: A JSON array containing comments. Each comment includes:
+          <ul>
+            <li><strong>commenter</strong>: The user who commented.</li>
+            <li><strong>text</strong>: The comment text.</li>
+            <li>
+              <strong>stars</strong>: An object with two properties, <strong>funny</strong> and <strong>useful</strong>,
+              representing the rating stars for that comment.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        Due to the dynamic nature of social media, EngageMetrics wants to focus on the most recent posts and, within
+        those, identify posts where at least one comment has received a high number of useful stars. This allows the
+        firm to spotlight content that is not only fresh but also resonating well with the audience.
+      </p>
+      <h2>Your Task</h2>
+      <p>Your task as a data analyst at EngageMetrics is to write a query that performs the following:</p>
+      <ol>
+        <li>
+          <strong>Filter Posts by Date:</strong> Consider only posts with a <strong>timestamp</strong> greater than or
+          equal to a specified minimum time (<code><!--?lit$139807793$-->2025-02-14T16:00:35.896Z</code>), ensuring that the analysis focuses on recent
+          posts.
+        </li>
+        <li>
+          <strong>Evaluate Comment Quality:</strong> From these recent posts, identify posts where at least one comment
+          has received more than a given number of useful stars (<code><!--?lit$139807793$-->3</code>). This criterion filters out
+          posts with low or mediocre engagement.
+        </li>
+        <li>
+          <strong>Extract and Sort Post IDs:</strong> Finally, extract all the <code>post_id</code> values of the posts
+          that meet these criteria and sort them in ascending order.
+        </li>
+      </ol>
+      <p>By accurately extracting these high-impact post IDs, EngageMetrics can:</p>
+      <ul>
+        <li>
+          <strong>Enhance Reporting:</strong> Provide clients with focused insights on posts that are currently engaging
+          audiences effectively.
+        </li>
+        <li>
+          <strong>Target Content Strategy:</strong> Help marketing teams identify trending content themes that generate
+          high-quality user engagement.
+        </li>
+        <li>
+          <strong>Optimize Resource Allocation:</strong> Enable better prioritization for content promotion and further
+          in-depth analysis of high-performing posts.
+        </li>
+      </ul>
+
+      <label class="form-label" for="q-duckdb-social-media-interactions">
+        Write a DuckDB SQL query to find all posts IDs after <!--?lit$139807793$-->2025-02-14T16:00:35.896Z with at least 1 comment with <!--?lit$139807793$-->3 useful
+        stars, sorted. The result should be a table with a single column called <code>post_id</code>, and the relevant
+        post IDs should be sorted in ascending order.
+      </label>
+      <textarea class="form-control font-monospace text-bg-dark" rows="6" id="q-duckdb-social-media-interactions" name="q-duckdb-social-media-interactions" disabled=""></textarea><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+      <p class="text-muted">Check the console for the result of your query.</p>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-duckdb-social-media-interactions" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-transcribe-youtube" id="hq-transcribe-youtube">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$139807793$-->9</span>
+              <!--?lit$139807793$-->Transcribe a YouTube video (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)
+            </div>
+            <!--?lit$139807793$--><!----><div class="card-body border-bottom"><!--?lit$139807793$--><h2>Extracting Audio and Transcripts</h2>
+<h2>Media Processing: FFmpeg</h2>
+<p><a href="https://ffmpeg.org/" target="_blank" rel="noopener noreferrer">FFmpeg</a> is the standard command-line tool for processing video and audio files. It's essential for data scientists working with media files for:</p>
+<ul>
+<li>Extracting audio/video for machine learning</li>
+<li>Converting formats for web deployment</li>
+<li>Creating visualizations and presentations</li>
+<li>Processing large media datasets</li>
+</ul>
+<p>Basic Operations:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Basic conversion</span>
+ffmpeg -i input.mp4 output.avi
+
+<span class="hljs-comment"># Extract audio</span>
+ffmpeg -i input.mp4 -vn output.mp3
+
+<span class="hljs-comment"># Convert format without re-encoding</span>
+ffmpeg -i input.mkv -c copy output.mp4
+
+<span class="hljs-comment"># High quality encoding (crf: 0-51, lower is better)</span>
+ffmpeg -i input.mp4 -preset slower -crf 18 output.mp4
+</code></pre>
+<p>Common Data Science Tasks:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Extract frames for computer vision</span>
+ffmpeg -i input.mp4 -vf <span class="hljs-string">"fps=1"</span> frames_%04d.png    <span class="hljs-comment"># 1 frame per second</span>
+ffmpeg -i input.mp4 -vf <span class="hljs-string">"select='eq(n,0)'"</span> -vframes 1 first_frame.jpg
+
+<span class="hljs-comment"># Create video from image sequence</span>
+ffmpeg -r 1/5 -i img%03d.png -c:v libx264 -vf fps=25 output.mp4
+
+<span class="hljs-comment"># Extract audio for speech recognition</span>
+ffmpeg -i input.mp4 -ar 16000 -ac 1 audio.wav      <span class="hljs-comment"># 16kHz mono</span>
+
+<span class="hljs-comment"># Trim video/audio for training data</span>
+ffmpeg -ss 00:01:00 -i input.mp4 -t 00:00:30 -c copy clip.mp4
+</code></pre>
+<p>Processing Multiple Files:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Concatenate videos (first create files.txt with list of files)</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"file 'input1.mp4'
+file 'input2.mp4'"</span> &gt; files.txt
+ffmpeg -f concat -i files.txt -c copy output.mp4
+
+<span class="hljs-comment"># Batch process with shell loop</span>
+<span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> *.mp4; <span class="hljs-keyword">do</span>
+    ffmpeg -i <span class="hljs-string">"<span class="hljs-variable">$f</span>"</span> -vn <span class="hljs-string">"audio/<span class="hljs-variable">${f%.mp4}</span>.wav"</span>
+<span class="hljs-keyword">done</span>
+</code></pre>
+<p>Data Analysis Features:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Get media file information</span>
+ffprobe -v quiet -print_format json -show_format -show_streams input.mp4
+
+<span class="hljs-comment"># Display frame metadata</span>
+ffprobe -v quiet -print_format json -show_frames input.mp4
+
+<span class="hljs-comment"># Generate video thumbnails</span>
+ffmpeg -i input.mp4 -vf <span class="hljs-string">"thumbnail"</span> -frames:v 1 thumb.jpg
+</code></pre>
+<p>Watch this introduction to FFmpeg (12 min):</p>
+<p><a href="https://youtu.be/MPV7JXTWPWI" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi_webp/MPV7JXTWPWI/sddefault.webp" alt="FFmpeg in 12 Minutes" class="img-fluid"></a></p>
+<p>Tools:</p>
+<ul>
+<li><a href="https://ffmpeg.lav.io/" target="_blank" rel="noopener noreferrer">ffmpeg.lav.io</a>: Interactive command builder</li>
+<li><a href="https://ffmpeg.guide/" target="_blank" rel="noopener noreferrer">FFmpeg Explorer</a>: Visual FFmpeg command generator</li>
+<li><a href="https://evanhahn.github.io/ffmpeg-buddy/" target="_blank" rel="noopener noreferrer">FFmpeg Buddy</a>: Simple command generator</li>
+</ul>
+<p>Tips:</p>
+<ol>
+<li>Use <code>-c copy</code> when possible to avoid re-encoding</li>
+<li>Monitor progress with <code>-progress pipe:1</code></li>
+<li>Use <code>-hide_banner</code> to reduce output verbosity</li>
+<li>Test commands with small clips first</li>
+<li>Use hardware acceleration when available (-hwaccel auto)</li>
+</ol>
+<p>Error Handling:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Validate file before processing</span>
+ffprobe input.mp4 2&gt;&amp;1 | grep <span class="hljs-string">"Invalid"</span>
+
+<span class="hljs-comment"># Continue on errors in batch processing</span>
+ffmpeg -i input.mp4 output.mp4 -xerror
+
+<span class="hljs-comment"># Get detailed error information</span>
+ffmpeg -v error -i input.mp4 2&gt;&amp;1 | grep -A2 <span class="hljs-string">"Error"</span>
+</code></pre>
+<!-- Assessment: Share output of `ffprobe -v quiet -print_format json -show_format {video}` -->
+<!-- Assessment: Share output of `ffmpeg -i {video} -vf "select='eq(n,0)'" -vframes 1 {email}.jpg` -->
+
+<h2>Media tools: yt-dlp</h2>
+<p><a href="https://github.com/yt-dlp/yt-dlp" target="_blank" rel="noopener noreferrer">yt-dlp</a> is a feature-rich command-line tool for downloading audio/video from thousands of sites. It's particularly useful for extracting audio and transcripts from videos.</p>
+<p>Install using your package manager:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># macOS</span>
+brew install yt-dlp
+
+<span class="hljs-comment"># Linux</span>
+curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o ~/.local/bin/yt-dlp
+<span class="hljs-built_in">chmod</span> a+rx ~/.local/bin/yt-dlp
+
+<span class="hljs-comment"># Windows</span>
+winget install yt-dlp
+</code></pre>
+<p>Common operations for extracting audio and transcripts:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Download audio only at lowest quality suitable for speech</span>
+yt-dlp -f <span class="hljs-string">"ba[abr&lt;50]/worstaudio"</span> \
+       --extract-audio \
+       --audio-format mp3 \
+       --audio-quality 32k \
+       <span class="hljs-string">"https://www.youtube.com/watch?v=VIDEO_ID"</span>
+
+<span class="hljs-comment"># Download auto-generated subtitles</span>
+yt-dlp --write-auto-sub \
+       --skip-download \
+       --sub-format <span class="hljs-string">"srt"</span> \
+       <span class="hljs-string">"https://www.youtube.com/watch?v=VIDEO_ID"</span>
+
+<span class="hljs-comment"># Download both audio and subtitles with custom output template</span>
+yt-dlp -f <span class="hljs-string">"ba[abr&lt;50]/worstaudio"</span> \
+       --extract-audio \
+       --audio-format mp3 \
+       --audio-quality 32k \
+       --write-auto-sub \
+       --sub-format <span class="hljs-string">"srt"</span> \
+       -o <span class="hljs-string">"%(title)s.%(ext)s"</span> \
+       <span class="hljs-string">"https://www.youtube.com/watch?v=VIDEO_ID"</span>
+
+<span class="hljs-comment"># Download entire playlist's audio</span>
+yt-dlp -f <span class="hljs-string">"ba[abr&lt;50]/worstaudio"</span> \
+       --extract-audio \
+       --audio-format mp3 \
+       --audio-quality 32k \
+       -o <span class="hljs-string">"%(playlist_index)s-%(title)s.%(ext)s"</span> \
+       <span class="hljs-string">"https://www.youtube.com/playlist?list=PLAYLIST_ID"</span>
+</code></pre>
+<p>For Python integration:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-comment"># /// script</span>
+<span class="hljs-comment"># requires-python = "&gt;=3.9"</span>
+<span class="hljs-comment"># dependencies = ["yt-dlp"]</span>
+<span class="hljs-comment"># ///</span>
+
+<span class="hljs-keyword">import</span> yt_dlp
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">download_audio</span>(<span class="hljs-params">url: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-literal">None</span>:
+    <span class="hljs-string">"""Download audio at speech-optimized quality."""</span>
+    ydl_opts = {
+        <span class="hljs-string">'format'</span>: <span class="hljs-string">'ba[abr&lt;50]/worstaudio'</span>,
+        <span class="hljs-string">'postprocessors'</span>: [{
+            <span class="hljs-string">'key'</span>: <span class="hljs-string">'FFmpegExtractAudio'</span>,
+            <span class="hljs-string">'preferredcodec'</span>: <span class="hljs-string">'mp3'</span>,
+            <span class="hljs-string">'preferredquality'</span>: <span class="hljs-string">'32'</span>
+        }]
+    }
+
+    <span class="hljs-keyword">with</span> yt_dlp.YoutubeDL(ydl_opts) <span class="hljs-keyword">as</span> ydl:
+        ydl.download([url])
+
+<span class="hljs-comment"># Example usage</span>
+download_audio(<span class="hljs-string">'https://www.youtube.com/watch?v=VIDEO_ID'</span>)
+</code></pre>
+<p>Tools:</p>
+<ul>
+<li><a href="https://ffmpeg.org/" target="_blank" rel="noopener noreferrer">ffmpeg</a>: Required for audio extraction and conversion</li>
+<li><a href="https://github.com/openai/whisper" target="_blank" rel="noopener noreferrer">whisper</a>: Can be used with yt-dlp for speech-to-text</li>
+<li><a href="https://github.com/mikf/gallery-dl" target="_blank" rel="noopener noreferrer">gallery-dl</a>: Alternative for image-focused sites</li>
+</ul>
+<p>Note: Always respect copyright and terms of service when downloading content.</p>
+<h2>Whisper transcription</h2>
+<p><a href="https://github.com/SYSTRAN/faster-whisper" target="_blank" rel="noopener noreferrer">Faster Whisper</a> is a highly optimized implementation of OpenAI's <a href="https://github.com/openai/whisper" target="_blank" rel="noopener noreferrer">Whisper model</a>, offering up to 4x faster transcription while using less memory.</p>
+<p>You can install it via:</p>
+<ul>
+<li><code>pip install faster-whisper</code></li>
+<li><a href="https://github.com/Purfview/whisper-standalone-win/releases" target="_blank" rel="noopener noreferrer">Download Windows Standalone</a></li>
+</ul>
+<p>Here's a basic usage example:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes">faster-whisper-xxl <span class="hljs-string">"video.mp4"</span> --model medium --language en
+</code></pre>
+<p>Here's my recommendation for transcribing videos. This saves the output in JSON as well as SRT format in the source directory.</p>
+<pre><code class="language-bash hljs" data-highlighted="yes">faster-whisper-xxl --print_progress --output_dir <span class="hljs-built_in">source</span> --batch_recursive \
+                   --check_files --standard --output_format json srt \
+                   --model medium --language en <span class="hljs-variable">$FILE</span>
+</code></pre>
+<ul>
+<li><code>--model</code>: The OpenAI Whisper model to use. You can choose from:<ul>
+<li><code>tiny</code>: Fastest but least accurate</li>
+<li><code>base</code>: Good for simple audio</li>
+<li><code>small</code>: Balanced speed/accuracy</li>
+<li><code>medium</code>: Recommended default</li>
+<li><code>large-v3</code>: Most accurate but slowest</li>
+</ul>
+</li>
+<li><code>--output_format</code>: The output format to use. You can pick multiple formats from:<ul>
+<li><code>json</code>: Has the most detailed information including timing, text, quality, etc.</li>
+<li><code>srt</code>: A popular subtitle format. You can use this in YouTube, for example.</li>
+<li><code>vtt</code>: A modern subtitle format.</li>
+<li><code>txt</code>: Just the text transcript</li>
+</ul>
+</li>
+<li><code>--output_dir</code>: The directory to save the output files. <code>source</code> indicates the source directory, i.e. where the input <code>$FILE</code> is</li>
+<li><code>--language</code>: The language of the input file. If you don't specify it, it analyzes the first 30 seconds to auto-detect. You can speed it up by specifying it.</li>
+</ul>
+<p>Run <code>faster-whisper-xxl --help</code> for more options.</p>
+<h2>Gemini transcription</h2>
+<p>The <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Gemini</a> models from Google are notable in two ways:</p>
+<ol>
+<li>They have a <em>huge</em> input context window. Gemini 2.0 Flash can accept 1M tokens, for example.</li>
+<li>They can handle audio input.</li>
+</ol>
+<p>This allows us to use Gemini to transcribe audio files.</p>
+<p>LLMs are not good at transcribing audio <em>faithfully</em>. They tend to correct errors and meander from what was said. But they are intelligent. That enables a few powerful workflows. Here are some examples:</p>
+<ol>
+<li><strong>Transcribe into other languages</strong>. Gemini will handle the transcription and translation in a single step.</li>
+<li><strong>Summarize audio transcripts</strong>. For example, convert a podcast into a tutorial, or a meeting recording into actions.</li>
+<li><strong>Legal Proceeding Analysis</strong>. Extract case citations, dates, and other details from a legal debate.</li>
+<li><strong>Medical Consultation Summary</strong>. Extract treatments, medications, details of next visit, etc. from a medical consultation.</li>
+</ol>
+<p>Here's how to use Gemini to transcribe audio files.</p>
+<ol>
+<li>Get a <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Gemini API key</a> from Google AI Studio.</li>
+<li>Set the <code>GEMINI_API_KEY</code> environment variable to the API key.</li>
+<li>Set the <code>MP3_FILE</code> environment variable to the path of the MP3 file you want to transcribe.</li>
+<li>Run this code:<pre><code class="language-bash hljs" data-highlighted="yes">curl -X POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-002:streamGenerateContent?alt=sse \
+  -H <span class="hljs-string">"X-Goog-API-Key: <span class="hljs-variable">$GEMINI_API_KEY</span>"</span> \
+  -H <span class="hljs-string">"Content-Type: application/json"</span> \
+  -d <span class="hljs-string">"<span class="hljs-subst">$(cat &lt;&lt; EOF
+{
+  <span class="hljs-string">"contents"</span>: [
+    {
+      <span class="hljs-string">"role"</span>: <span class="hljs-string">"user"</span>,
+      <span class="hljs-string">"parts"</span>: [
+        {
+          <span class="hljs-string">"inline_data"</span>: {
+            <span class="hljs-string">"mime_type"</span>: <span class="hljs-string">"audio/mp3"</span>,
+            <span class="hljs-string">"data"</span>: <span class="hljs-string">"<span class="hljs-subst">$(base64 --wrap=0 $MP3_FILE)</span>"</span>
+          }
+        },
+        {<span class="hljs-string">"text"</span>: <span class="hljs-string">"Transcribe this"</span>}
+      ]
+    }
+  ]
+}
+EOF
+)</span>"</span>
+</code></pre>
+</li>
+</ol>
+</div><!---->
+            <div class="card-body"><!--?lit$139807793$-->
+    <div class="mb-3">
+      <h2 id="enhancing-accessibility-and-content-analysis-for-mystery-audiobooks">
+        Enhancing Accessibility and Content Analysis for Mystery Audiobooks
+      </h2>
+      <p>
+        <strong>Mystery Tales Publishing</strong> is an independent publisher specializing in mystery and suspense
+        audiobooks. To broaden their audience and improve accessibility, they have been uploading narrated versions of
+        their stories to YouTube. In addition to reaching visually impaired users, they want to leverage transcripts for
+        content summarization, search indexing, and social media promotion.
+      </p>
+      <p>
+        The company has identified that certain segments of their mystery story audiobooks generate the most engagement.
+        However, transcribing entire videos can be time-consuming and may include irrelevant content. Therefore, they
+        have decided to focus on transcribing only the most compelling segments. For instance, a particular segment—from
+        <strong><!--?lit$139807793$-->120.2</strong> to <strong><!--?lit$139807793$-->269.2</strong>—is known to captivate listeners with a twist in the
+        plot. An accurate transcript of this segment will:
+      </p>
+      <ul>
+        <li>Enhance accessibility by providing a text alternative for hearing-impaired users.</li>
+        <li>Improve search engine optimization (SEO) through indexed keywords.</li>
+        <li>Support content analysis and summarization for promotional purposes.</li>
+      </ul>
+      <p>
+        As part of a pilot project, you are tasked with transcribing the YouTube video segment of a mystery story
+        audiobook. You are provided with a sample video that features a narrated mystery story. Your focus will be on
+        the segment starting at <strong><!--?lit$139807793$-->120.2</strong> and ending at <strong><!--?lit$139807793$-->269.2</strong>.
+      </p>
+      <p>Your transcription should:</p>
+      <ul>
+        <li>Accurately capture all spoken dialogue and descriptive narration.</li>
+        <li>Include appropriate punctuation and paragraph breaks to reflect natural speech.</li>
+        <li>Exclude any extraneous noise or background commentary not relevant to the narrative.</li>
+      </ul>
+      <h2 id="your-task">Your Task</h2>
+      <ol>
+        <li><strong>Access the Video:</strong> Use the provided YouTube link to access the mystery story audiobook.</li>
+        <li>
+          <strong>Convert to Audio:</strong> Extract the audio for the segment between <strong><!--?lit$139807793$-->120.2</strong> and
+          <strong><!--?lit$139807793$-->269.2</strong>.
+        </li>
+        <li><strong>Transcribe the Segment:</strong> Utilize automated speech-to-text tools as needed.</li>
+      </ol>
+      <p>By producing an accurate transcript of this key segment, Mystery Tales Publishing will be able to:</p>
+      <ul>
+        <li>
+          <strong>Boost Accessibility:</strong> Provide high-quality captions and text alternatives for hearing-impaired
+          users.
+        </li>
+        <li>
+          <strong>Enhance SEO:</strong> Improve the discoverability of their content through better keyword indexing.
+        </li>
+        <li>
+          <strong>Drive Engagement:</strong> Use the transcript for social media snippets, summaries, and promotional
+          materials.
+        </li>
+        <li>
+          <strong>Enable Content Analysis:</strong> Facilitate further analysis such as sentiment analysis, topic
+          modeling, and reader comprehension studies.
+        </li>
+      </ul>
+
+      <label class="form-label" for="q-transcribe-youtube">
+        What is the text of the transcript of this
+        <a href="https://youtu.be/NRntuOJu4ok">Mystery Story Audiobook</a> between <!--?lit$139807793$-->120.2 and <!--?lit$139807793$-->269.2 seconds?
+      </label>
+      <textarea class="form-control" rows="10" required="" id="q-transcribe-youtube" name="q-transcribe-youtube" disabled=""></textarea><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-transcribe-youtube" disabled="">Check</button>
+            </div>
+          </div>
+        <!----><!---->
+          <div class="card my-5" data-question="q-image-jigsaw" id="hq-image-jigsaw">
+            <div class="card-header">
+              <span class="badge text-bg-primary me-2"><!--?lit$139807793$-->10</span>
+              <!--?lit$139807793$-->Reconstruct an image (<!--?lit$139807793$-->1 <!--?lit$139807793$-->mark)
+            </div>
+            <!--?lit$139807793$--><!----><div class="card-body border-bottom"><!--?lit$139807793$--><h2>Transforming Images</h2>
+<h3>Image Processing with PIL (Pillow)</h3>
+<p><a href="https://youtu.be/6Qs3wObeWwc" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi_webp/6Qs3wObeWwc/sddefault.webp" alt="Python Tutorial: Image Manipulation with Pillow (16 min)" class="img-fluid"></a></p>
+<p><a href="https://python-pillow.org/" target="_blank" rel="noopener noreferrer">Pillow</a> is Python's leading library for image processing, offering powerful tools for editing, analyzing, and generating images. It handles various formats (PNG, JPEG, GIF, etc.) and provides operations from basic resizing to complex filters.</p>
+<p>Here's a minimal example showing common operations:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-comment"># /// script</span>
+<span class="hljs-comment"># requires-python = "&gt;=3.11"</span>
+<span class="hljs-comment"># dependencies = ["Pillow"]</span>
+<span class="hljs-comment"># ///</span>
+
+<span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image, ImageEnhance, ImageFilter
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">process_image</span>(<span class="hljs-params">path: <span class="hljs-built_in">str</span></span>) -&gt; Image.Image:
+    <span class="hljs-string">"""Process an image with basic enhancements."""</span>
+    <span class="hljs-keyword">with</span> Image.<span class="hljs-built_in">open</span>(path) <span class="hljs-keyword">as</span> img:
+        <span class="hljs-comment"># Convert to RGB to ensure compatibility</span>
+        img = img.convert(<span class="hljs-string">'RGB'</span>)
+
+        <span class="hljs-comment"># Resize maintaining aspect ratio</span>
+        img.thumbnail((<span class="hljs-number">800</span>, <span class="hljs-number">800</span>))
+
+        <span class="hljs-comment"># Apply enhancements</span>
+        img = (ImageEnhance.Contrast(img)
+               .enhance(<span class="hljs-number">1.2</span>))
+
+        <span class="hljs-keyword">return</span> img.<span class="hljs-built_in">filter</span>(ImageFilter.SHARPEN)
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+    <span class="hljs-keyword">import</span> asyncio
+    img = asyncio.run(process_image(<span class="hljs-string">"input.jpg"</span>))
+    img.save(<span class="hljs-string">"output.jpg"</span>, quality=<span class="hljs-number">85</span>)
+</code></pre>
+<p>Key features and techniques you'll learn:</p>
+<ul>
+<li><strong>Image Loading and Saving</strong>: Handle various formats with automatic conversion</li>
+<li><strong>Basic Operations</strong>: Resize, rotate, crop, and flip images</li>
+<li><strong>Color Manipulation</strong>: Adjust brightness, contrast, and color balance</li>
+<li><strong>Filters and Effects</strong>: Apply blur, sharpen, and other visual effects</li>
+<li><strong>Drawing</strong>: Add text, shapes, and overlays to images</li>
+<li><strong>Batch Processing</strong>: Handle multiple images efficiently</li>
+<li><strong>Memory Management</strong>: Process large images without memory issues</li>
+</ul>
+<h3>Basic Image Operations</h3>
+<p>Common operations for resizing, cropping, and rotating images:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">transform_image</span>(<span class="hljs-params">
+    path: <span class="hljs-built_in">str</span>,
+    size: <span class="hljs-built_in">tuple</span>[<span class="hljs-built_in">int</span>, <span class="hljs-built_in">int</span>],
+    rotation: <span class="hljs-built_in">float</span> = <span class="hljs-number">0</span>
+</span>) -&gt; Image.Image:
+    <span class="hljs-string">"""Transform image with basic operations."""</span>
+    <span class="hljs-keyword">with</span> Image.<span class="hljs-built_in">open</span>(path) <span class="hljs-keyword">as</span> img:
+        <span class="hljs-comment"># Resize with anti-aliasing</span>
+        img = img.resize(size, Image.LANCZOS)
+
+        <span class="hljs-comment"># Rotate around center</span>
+        <span class="hljs-keyword">if</span> rotation:
+            img = img.rotate(rotation, expand=<span class="hljs-literal">True</span>)
+
+        <span class="hljs-comment"># Auto-crop empty edges</span>
+        img = img.crop(img.getbbox())
+
+        <span class="hljs-keyword">return</span> img
+</code></pre>
+<h3>Color and Enhancement</h3>
+<p>Adjust image appearance with built-in enhancement tools:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> ImageEnhance, ImageOps
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">enhance_image</span>(<span class="hljs-params">
+    img: Image.Image,
+    brightness: <span class="hljs-built_in">float</span> = <span class="hljs-number">1.0</span>,
+    contrast: <span class="hljs-built_in">float</span> = <span class="hljs-number">1.0</span>,
+    saturation: <span class="hljs-built_in">float</span> = <span class="hljs-number">1.0</span>
+</span>) -&gt; Image.Image:
+    <span class="hljs-string">"""Apply color enhancements to image."""</span>
+    enhancers = [
+        (ImageEnhance.Brightness, brightness),
+        (ImageEnhance.Contrast, contrast),
+        (ImageEnhance.Color, saturation)
+    ]
+
+    <span class="hljs-keyword">for</span> Enhancer, factor <span class="hljs-keyword">in</span> enhancers:
+        <span class="hljs-keyword">if</span> factor != <span class="hljs-number">1.0</span>:
+            img = Enhancer(img).enhance(factor)
+
+    <span class="hljs-keyword">return</span> img
+</code></pre>
+<h3>Filters and Effects</h3>
+<p>Apply visual effects and filters to images:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> ImageFilter
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">apply_effects</span>(<span class="hljs-params">img: Image.Image</span>) -&gt; Image.Image:
+    <span class="hljs-string">"""Apply various filters and effects."""</span>
+    effects = {
+        <span class="hljs-string">'blur'</span>: ImageFilter.GaussianBlur(radius=<span class="hljs-number">2</span>),
+        <span class="hljs-string">'sharpen'</span>: ImageFilter.SHARPEN,
+        <span class="hljs-string">'edge'</span>: ImageFilter.FIND_EDGES,
+        <span class="hljs-string">'emboss'</span>: ImageFilter.EMBOSS
+    }
+
+    <span class="hljs-keyword">return</span> {name: img.<span class="hljs-built_in">filter</span>(effect)
+            <span class="hljs-keyword">for</span> name, effect <span class="hljs-keyword">in</span> effects.items()}
+</code></pre>
+<h3>Drawing and Text</h3>
+<p>Add text, shapes, and overlays to images:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image, ImageDraw, ImageFont
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">add_watermark</span>(<span class="hljs-params">
+    img: Image.Image,
+    text: <span class="hljs-built_in">str</span>,
+    font_size: <span class="hljs-built_in">int</span> = <span class="hljs-number">30</span>
+</span>) -&gt; Image.Image:
+    <span class="hljs-string">"""Add text watermark to image."""</span>
+    draw = ImageDraw.Draw(img)
+    font = ImageFont.truetype(<span class="hljs-string">"arial.ttf"</span>, font_size)
+
+    <span class="hljs-comment"># Calculate text size and position</span>
+    text_bbox = draw.textbbox((<span class="hljs-number">0</span>, <span class="hljs-number">0</span>), text, font=font)
+    text_width = text_bbox[<span class="hljs-number">2</span>] - text_bbox[<span class="hljs-number">0</span>]
+    text_height = text_bbox[<span class="hljs-number">3</span>] - text_bbox[<span class="hljs-number">1</span>]
+
+    <span class="hljs-comment"># Position text at bottom-right</span>
+    x = img.width - text_width - <span class="hljs-number">10</span>
+    y = img.height - text_height - <span class="hljs-number">10</span>
+
+    <span class="hljs-comment"># Add text with shadow</span>
+    draw.text((x+<span class="hljs-number">2</span>, y+<span class="hljs-number">2</span>), text, font=font, fill=<span class="hljs-string">'black'</span>)
+    draw.text((x, y), text, font=font, fill=<span class="hljs-string">'white'</span>)
+
+    <span class="hljs-keyword">return</span> img
+</code></pre>
+<h3>Memory-Efficient Processing</h3>
+<p>Handle large images without loading them entirely into memory:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image
+<span class="hljs-keyword">import</span> os
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">process_large_images</span>(<span class="hljs-params">
+    input_dir: <span class="hljs-built_in">str</span>,
+    output_dir: <span class="hljs-built_in">str</span>,
+    max_size: <span class="hljs-built_in">tuple</span>[<span class="hljs-built_in">int</span>, <span class="hljs-built_in">int</span>]
+</span>) -&gt; <span class="hljs-literal">None</span>:
+    <span class="hljs-string">"""Process multiple large images efficiently."""</span>
+    os.makedirs(output_dir, exist_ok=<span class="hljs-literal">True</span>)
+
+    <span class="hljs-keyword">for</span> filename <span class="hljs-keyword">in</span> os.listdir(input_dir):
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> filename.lower().endswith((<span class="hljs-string">'.png'</span>, <span class="hljs-string">'.jpg'</span>, <span class="hljs-string">'.jpeg'</span>)):
+            <span class="hljs-keyword">continue</span>
+
+        input_path = os.path.join(input_dir, filename)
+        output_path = os.path.join(output_dir, filename)
+
+        <span class="hljs-keyword">with</span> Image.<span class="hljs-built_in">open</span>(input_path) <span class="hljs-keyword">as</span> img:
+            <span class="hljs-comment"># Process in chunks using thumbnail</span>
+            img.thumbnail(max_size)
+            img.save(output_path, optimize=<span class="hljs-literal">True</span>)
+</code></pre>
+<p>Practice with these resources:</p>
+<ul>
+<li><a href="https://pillow.readthedocs.io/" target="_blank" rel="noopener noreferrer">Pillow Documentation</a>: Complete API reference</li>
+<li><a href="https://realpython.com/image-processing-with-the-python-pillow-library/" target="_blank" rel="noopener noreferrer">Python Image Processing Tutorial</a>: In-depth guide</li>
+<li><a href="https://www.kaggle.com/datasets/lamsimon/celebs" target="_blank" rel="noopener noreferrer">Sample Images Dataset</a>: Test images for practice</li>
+</ul>
+<p>Watch these tutorials for hands-on demonstrations:</p>
+<p><a href="https://youtu.be/dkp4wUhCwR4" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi_webp/dkp4wUhCwR4/sddefault.webp" alt="Image Processing Tutorial for beginners with Python PIL in 30 mins" class="img-fluid"></a></p>
+<h3>Image Processing with ImageMagick</h3>
+<p><a href="https://imagemagick.org/" target="_blank" rel="noopener noreferrer">ImageMagick</a> is a powerful command-line tool for image manipulation, offering features beyond what's possible with Python libraries. It's particularly useful for:</p>
+<ul>
+<li>Batch processing large image collections</li>
+<li>Complex image transformations</li>
+<li>High-quality format conversion</li>
+<li>Creating image thumbnails</li>
+<li>Adding text and watermarks</li>
+</ul>
+<p>Basic Operations:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Format conversion</span>
+convert input.png output.jpg
+
+<span class="hljs-comment"># Resize image (maintains aspect ratio)</span>
+convert input.jpg -resize 800x600 output.jpg
+
+<span class="hljs-comment"># Compress image quality</span>
+convert input.jpg -quality 85 output.jpg
+
+<span class="hljs-comment"># Rotate image</span>
+convert input.jpg -rotate 90 output.jpg
+</code></pre>
+<p>Common Data Science Tasks:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Create thumbnails for dataset preview</span>
+convert input.jpg -thumbnail 200x200^ -gravity center -extent 200x200 thumb.jpg
+
+<span class="hljs-comment"># Normalize image for ML training</span>
+convert input.jpg -normalize -strip output.jpg
+
+<span class="hljs-comment"># Extract dominant colors</span>
+convert input.jpg -colors 5 -unique-colors txt:
+
+<span class="hljs-comment"># Generate image statistics</span>
+identify -verbose input.jpg | grep -E <span class="hljs-string">"Mean|Standard|Kurtosis"</span>
+</code></pre>
+<p>Batch Processing:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Convert all images in a directory</span>
+mogrify -format jpg *.png
+
+<span class="hljs-comment"># Resize multiple images</span>
+mogrify -resize 800x600 -path output/ *.jpg
+
+<span class="hljs-comment"># Add watermark to images</span>
+<span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> *.jpg; <span class="hljs-keyword">do</span>
+    convert <span class="hljs-string">"<span class="hljs-variable">$f</span>"</span> -gravity southeast -draw <span class="hljs-string">"text 10,10 'Copyright'"</span> <span class="hljs-string">"watermarked/<span class="hljs-variable">$f</span>"</span>
+<span class="hljs-keyword">done</span>
+</code></pre>
+<p>Advanced Features:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Apply image effects</span>
+convert input.jpg -blur 0x3 blurred.jpg
+convert input.jpg -sharpen 0x3 sharp.jpg
+convert input.jpg -edge 1 edges.jpg
+
+<span class="hljs-comment"># Create image montage</span>
+montage *.jpg -geometry 200x200+2+2 montage.jpg
+
+<span class="hljs-comment"># Extract image channels</span>
+convert input.jpg -separate channels_%d.jpg
+
+<span class="hljs-comment"># Composite images</span>
+composite overlay.png -gravity center base.jpg output.jpg
+</code></pre>
+<p>Watch this ImageMagick tutorial (16 min):</p>
+<p><a href="https://youtu.be/wjcBOoReYc0" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi_webp/wjcBOoReYc0/sddefault.webp" alt="ImageMagick Introduction (16 min)" class="img-fluid"></a></p>
+<p>Tools:</p>
+<ul>
+<li><a href="http://www.fmwconcepts.com/imagemagick/" target="_blank" rel="noopener noreferrer">Fred's ImageMagick Scripts</a>: Useful script collection</li>
+<li><a href="https://magickstudio.imagemagick.org/" target="_blank" rel="noopener noreferrer">ImageMagick Online Studio</a>: Visual command builder</li>
+</ul>
+<p>Tips:</p>
+<ol>
+<li>Use <code>-strip</code> to remove metadata and reduce file size</li>
+<li>Monitor memory usage with <code>-limit memory 1GB</code></li>
+<li>Use <code>-define</code> for format-specific options</li>
+<li>Process in parallel with <code>-parallel</code></li>
+<li>Use <code>-monitor</code> to track progress</li>
+</ol>
+<p>Error Handling:</p>
+<pre><code class="language-bash hljs" data-highlighted="yes"><span class="hljs-comment"># Check image validity</span>
+identify -regard-warnings input.jpg
+
+<span class="hljs-comment"># Get detailed error information</span>
+convert input.jpg output.jpg 2&gt;&amp;1 | grep -i <span class="hljs-string">"error"</span>
+
+<span class="hljs-comment"># Set resource limits</span>
+convert -<span class="hljs-built_in">limit</span> memory 1GB -<span class="hljs-built_in">limit</span> map 2GB input.jpg output.jpg
+</code></pre>
+<p>For Python integration:</p>
+<pre><code class="language-python hljs" data-highlighted="yes"><span class="hljs-comment"># /// script</span>
+<span class="hljs-comment"># requires-python = "&gt;=3.9"</span>
+<span class="hljs-comment"># dependencies = ["Wand"]</span>
+<span class="hljs-comment"># ///</span>
+
+<span class="hljs-keyword">from</span> wand.image <span class="hljs-keyword">import</span> Image
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">process_image</span>(<span class="hljs-params">path: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-literal">None</span>:
+    <span class="hljs-string">"""Process image with ImageMagick via Wand."""</span>
+    <span class="hljs-keyword">with</span> Image(filename=path) <span class="hljs-keyword">as</span> img:
+        <span class="hljs-comment"># Basic operations</span>
+        img.resize(<span class="hljs-number">800</span>, <span class="hljs-number">600</span>)
+        img.normalize()
+
+        <span class="hljs-comment"># Apply effects</span>
+        img.sharpen(radius=<span class="hljs-number">0</span>, sigma=<span class="hljs-number">3</span>)
+
+        <span class="hljs-comment"># Save with compression</span>
+        img.save(filename=<span class="hljs-string">'output.jpg'</span>)
+</code></pre>
+<p>Note: Always install ImageMagick before using the Wand Python binding.</p>
+</div><!---->
+            <div class="card-body"><!--?lit$139807793$-->
+    <div class="mb-3">
+      <h2 id="image-reconstruction-for-forensic-analysis">Image Reconstruction for Forensic Analysis</h2>
+      <p>
+        <strong>PixelGuard Solutions</strong> is a digital forensics firm specializing in the recovery and analysis of
+        visual evidence for law enforcement and corporate investigations. One of their recurring challenges involves
+        reconstructing damaged or deliberately scrambled images to reveal hidden details critical to solving cases.
+      </p>
+      <p>
+        In a recent investigation, law enforcement received an anonymous tip involving a scrambled image that appeared
+        to contain sensitive information. The image had been deliberately cut into 25 (5x5) pieces and rearranged to
+        obfuscate its content. Recovering the original image was essential for uncovering evidence related to the case.
+      </p>
+      <p>
+        PixelGuard's forensic team extracted the scrambled pieces and obtained a mapping file that specifies the
+        transformation from the original (row, col) positions to the new positions. However, the team now needs to
+        reassemble the image according to this mapping to restore its original appearance.
+      </p>
+      <h2 id="your-task">Your Task</h2>
+      <p>
+        As a digital forensics analyst at PixelGuard Solutions, your task is to reconstruct the original image from its
+        scrambled pieces. You are provided with:
+      </p>
+      <ul>
+        <li>The 25 individual image pieces (put together as a single image).</li>
+        <li>
+          A mapping file detailing the original (row, col) position for each piece and its current (row, col) location.
+        </li>
+      </ul>
+      <p>
+        Your reconstructed image will be critical evidence in the investigation. Once assembled, the image must be
+        uploaded to the secure case management system for further analysis by the investigative team.
+      </p>
+      <ol>
+        <li>
+          <strong>Understand the Mapping:</strong> Review the provided mapping file that shows how each piece's
+          original coordinates (row, col) relate to its current scrambled position.
+        </li>
+        <li>
+          <strong>Reassemble the Image:</strong> Using the mapping, reassemble the 5x5 grid of image pieces to
+          reconstruct the original image. You may use an image processing library (e.g., Python's Pillow,
+          ImageMagick, or a similar tool) to automate the reconstruction process.
+        </li>
+        <li>
+          <strong>Output the Reconstructed Image:</strong> Save the reassembled image in a lossless format (e.g., PNG or
+          WEBP). Upload the reconstructed image to the secure case management system as required by PixelGuard’s
+          workflow.
+        </li>
+      </ol>
+      <p>By accurately reconstructing the scrambled image, PixelGuard Solutions will:</p>
+      <ul>
+        <li>
+          <strong>Reveal Critical Evidence:</strong> Provide investigators with a clear view of the original image,
+          which may contain important details related to the case.
+        </li>
+        <li>
+          <strong>Enhance Analytical Capabilities:</strong> Enable further analysis and digital enhancements that can
+          lead to breakthroughs in the investigation.
+        </li>
+        <li>
+          <strong>Maintain Chain of Custody:</strong> Ensure that the reconstruction process is documented and reliable,
+          supporting the admissibility of the evidence in court.
+        </li>
+        <li>
+          <strong>Improve Operational Efficiency:</strong> Demonstrate the effectiveness of automated image
+          reconstruction techniques in forensic investigations.
+        </li>
+      </ul>
+
+      <p>Here is the image. It is a 500x500 pixel image that has been cut into 25 (5x5) pieces:</p>
+      <p><img src="https://exam.sanand.workers.dev/jigsaw.webp"></p>
+      <p>Here is the mapping of each piece:</p>
+      <table class="table table-sm">
+        <thead>
+          <tr>
+            <th>Original Row</th>
+            <th>Original Column</th>
+            <th>Scrambled Row</th>
+            <th>Scrambled Column</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--?lit$139807793$--><!----><tr>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->0</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->1</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->2</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->3</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->4</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->0</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->1</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->2</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->3</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->4</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->0</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->1</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->2</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->3</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->4</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->0</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->1</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->2</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->3</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->4</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->0</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->2</td>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->1</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->1</td>
+                <td><!--?lit$139807793$-->3</td>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->2</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->3</td>
+              </tr><!----><!----><tr>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->0</td>
+                <td><!--?lit$139807793$-->4</td>
+                <td><!--?lit$139807793$-->4</td>
+              </tr><!---->
+        </tbody>
+      </table>
+      <label class="form-label" for="q-image-jigsaw">
+        Upload the reconstructed image by moving the pieces from the scrambled position to the original position:
+      </label>
+      <input class="form-control" type="file" accept="image/*" id="q-image-jigsaw" name="q-image-jigsaw" disabled=""><div class="valid-feedback mb-3 comment">Correct!</div>
+            <div class="invalid-feedback mb-3 comment">Incorrect. Try again.</div>
+    </div>
+  </div>
+            <div class="card-footer d-flex">
+              <button type="button" class="btn btn-primary check-answer" data-question="q-image-jigsaw" disabled="">Check</button>
+            </div>
+          </div>
+        <!----></section>
+      <button type="submit" class="btn btn-success check-action" title="Check your score" disabled="">Check all</button>
+      <button type="button" class="btn btn-primary save-action" title="Save your progress" disabled="">Save</button>
+      <div id="submission-status" class="my-3"></div>
+      <p>Save regularly. Your <em>last saved</em> submission will be evaluated.</p>
+    </form>
+
+    <footer class="my-5 d-flex align-items-center justify-content-center" style="height: 50vh;">
+      <h1 class="display-4">Best of luck!</h1>
+    </footer>
+  </main>
+
+  <script type="module" src="./TDS 2025 Jan GA5 - Data Preparation_files/bootstrap.bundle.min.js.download" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script type="module" src="./TDS 2025 Jan GA5 - Data Preparation_files/dark-theme.js.download" integrity="sha384-WWZYgp4BxSnWElq/A+SNJoNuJ5eZf6xBLqGUBHmu6QXN+9dqtz7bTtyuBwy9O7C+" crossorigin="anonymous"></script>
+  <script src="./TDS 2025 Jan GA5 - Data Preparation_files/client"></script>
+  <script type="module">
+    import { setup } from './exam.js';
+    setup(window.location.pathname.slice(1));
+  </script>
+
+
+
+</body></html>
